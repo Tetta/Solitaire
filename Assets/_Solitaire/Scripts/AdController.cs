@@ -108,7 +108,15 @@ public class AdController : MonoBehaviour {
             appKey = ANDROID_APP_KEY;
 #endif
             IronSource.Agent.validateIntegration();
+
+            // Add Banner Events
             IronSourceEvents.onBannerAdLoadedEvent += BannerAdLoadedEvent;
+            IronSourceEvents.onBannerAdLoadFailedEvent += BannerAdLoadFailedEvent;		
+            IronSourceEvents.onBannerAdClickedEvent += BannerAdClickedEvent; 
+            IronSourceEvents.onBannerAdScreenPresentedEvent += BannerAdScreenPresentedEvent; 
+            IronSourceEvents.onBannerAdScreenDismissedEvent += BannerAdScreenDismissedEvent;
+            IronSourceEvents.onBannerAdLeftApplicationEvent += BannerAdLeftApplicationEvent;
+            Debug.Log("unity-script: IronSource.Agent.init");
             IronSource.Agent.init(appKey, IronSourceAdUnits.INTERSTITIAL, IronSourceAdUnits.BANNER);
             IronSource.Agent.loadInterstitial();
             IronSource.Agent.loadBanner(IronSourceBannerSize.BANNER, IronSourceBannerPosition.BOTTOM);
@@ -153,20 +161,49 @@ public class AdController : MonoBehaviour {
     }
 
 
+
+    public void showBanner2() {
+        showBanner();
+    }
+    public static void showBanner() {
+        //fix
+        //if (!IAPManager.vip)
+        Debug.Log("showBanner");
+        
+        IronSource.Agent.displayBanner();
+    }
+    public static void hideBanner () {
+        IronSource.Agent.hideBanner();
+    }
+
     //Banner Events
     void BannerAdLoadedEvent ()
     {
     	Debug.Log ("unity-script: I got BannerAdLoadedEvent");
         showBanner();
     }
-    public void showBanner2() {
-        showBanner();
+
+    void BannerAdLoadFailedEvent (IronSourceError error)
+    {
+    	Debug.Log ("unity-script: I got BannerAdLoadFailedEvent, code: " + error.getCode () + ", description : " + error.getDescription ());
     }
-    public static void showBanner() {
-        if (!IAPManager.vip)
-            IronSource.Agent.displayBanner();
+
+    void BannerAdClickedEvent ()
+    {
+    	Debug.Log ("unity-script: I got BannerAdClickedEvent");
     }
-    public static void hideBanner () {
-        IronSource.Agent.hideBanner();
+
+    void BannerAdScreenPresentedEvent ()
+    {
+    	Debug.Log ("unity-script: I got BannerAdScreenPresentedEvent");
+    }
+
+    void BannerAdScreenDismissedEvent ()
+    {
+    	Debug.Log ("unity-script: I got BannerAdScreenDismissedEvent");
+    }
+
+    void BannerAdLeftApplicationEvent () { 
+    	Debug.Log ("unity-script: I got BannerAdLeftApplicationEvent");
     }
 }
