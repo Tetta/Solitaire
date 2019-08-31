@@ -41,9 +41,9 @@ public class SubscriptionCanvas : MonoBehaviour
     }
     private void Start ()
 	{
+        updateView();
 
-        
-		StartCoroutine(WaitFrame());
+        StartCoroutine(WaitFrame());
 	}
 	
 	private IEnumerator WaitFrame()
@@ -121,18 +121,23 @@ public class SubscriptionCanvas : MonoBehaviour
         screenVert2 = Screen.currentResolution.height > Screen.currentResolution.width;
         if (screenVert != screenVert2) {
             screenVert = screenVert2;
-            if (screenVert) {
-                _panel.transform.Find("Vertical").gameObject.SetActive(true);
-                _panel.transform.Find("Horizontal").gameObject.SetActive(false);
-                _panel2.transform.Find("Vertical").gameObject.SetActive(true);
-                _panel2.transform.Find("Horizontal").gameObject.SetActive(false);
+            updateView();
+        }
+    }
 
-            } else {
-                _panel.transform.Find("Vertical").gameObject.SetActive(false);
-                _panel.transform.Find("Horizontal").gameObject.SetActive(true);
-                _panel2.transform.Find("Vertical").gameObject.SetActive(false);
-                _panel2.transform.Find("Horizontal").gameObject.SetActive(true);
-            }
+    void updateView () {
+        if (screenVert) {
+            _panel.transform.Find("Vertical").gameObject.SetActive(true);
+            _panel.transform.Find("Horizontal").gameObject.SetActive(false);
+            _panel2.transform.Find("Vertical").gameObject.SetActive(true);
+            _panel2.transform.Find("Horizontal").gameObject.SetActive(false);
+
+        }
+        else {
+            _panel.transform.Find("Vertical").gameObject.SetActive(false);
+            _panel.transform.Find("Horizontal").gameObject.SetActive(true);
+            _panel2.transform.Find("Vertical").gameObject.SetActive(false);
+            _panel2.transform.Find("Horizontal").gameObject.SetActive(true);
         }
     }
 }
