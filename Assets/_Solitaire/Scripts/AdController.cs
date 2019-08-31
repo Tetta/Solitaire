@@ -159,7 +159,9 @@ public class AdController : MonoBehaviour {
     	Debug.Log ("unity-script: I got BannerAdLoadedEvent");
         showBanner();
     }
-
+    public void showBanner2() {
+        showBanner();
+    }
     public static void showBanner() {
         if (!IAPManager.vip)
             IronSource.Agent.displayBanner();
