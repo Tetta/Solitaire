@@ -98,6 +98,8 @@
     <Compile Include="Assets\Editor\Beebyte\Obfuscator\Postbuild.cs" />
     <Compile Include="Assets\Editor\ChangePlist.cs" />
     <Compile Include="Assets\Editor\LabirintMenu.cs" />
+    <Compile Include="Assets\IronSource\Editor\AdMobSettings.cs" />
+    <Compile Include="Assets\IronSource\Editor\FacebookSettings.cs" />
     <Compile Include="Assets\IronSource\Editor\IAdapterSettings.cs" />
     <Compile Include="Assets\IronSource\Editor\IronSourceBuildPostprocessor.cs" />
     <None Include="Assets\FacebookSDK\Plugins\Editor\Dependencies.xml" />

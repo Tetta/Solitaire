@@ -86,13 +86,8 @@
     <Compile Include="Assets\Plugins\UnityPurchasing\script\IAPListener.cs" />
     <Compile Include="Assets\Plugins\UnityPurchasing\script\PurchasingCheck.cs" />
     <None Include="Assets\Plugins\Android\IronSource\AndroidManifest.xml" />
-    <None Include="Assets\Plugins\iOS\IronSource\ISTapjoyAdapter\Resources\TapjoyResources.bundle\mraid.js.txt" />
-    <None Include="Assets\Plugins\iOS\IronSource\ISTapjoyAdapter\Resources\TapjoyResources.bundle\revision.txt" />
     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
-    <None Include="Assets\Plugins\iOS\IronSource\ISFyberAdapter\IASDKMRAID.framework\version.txt" />
-    <None Include="Assets\Plugins\iOS\IronSource\ISFyberAdapter\IASDKVideo.framework\version.txt" />
     <None Include="Assets\Plugins\UnityPurchasing\script\link.xml" />
-    <None Include="Assets\Plugins\iOS\IronSource\ISFyberAdapter\IASDKCore.framework\version.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/Projects/Solitaire/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Solitaire/Scenes/EscapeLabirint.unity
-    guid: bec74fdd19bacef448bca5645f444694
+    path: Assets/_Solitaire/Scenes/_Main.unity
+    guid: b5d1155dba533bb4c90a5dc034584945
   m_configObjects: {}
