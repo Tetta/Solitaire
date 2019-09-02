@@ -63,7 +63,6 @@
     <Compile Include="Assets\_Asset\Editor\OMStore\OMStoreEditor.cs" />
     <Compile Include="Assets\_Asset\Editor\ScriptableObject\ScriptableObjectFactory.cs" />
     <Compile Include="Assets\_Asset\Editor\ScriptableObject\ScriptableObjectWindow.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Editor\AdMobDependencies.cs" />
     <Compile Include="Assets\_Asset\Spine\spine-unity\Asset Types\Editor\AtlasAssetInspector.cs" />
     <Compile Include="Assets\_Asset\Spine\spine-unity\Asset Types\Editor\SkeletonDataAssetInspector.cs" />
     <Compile Include="Assets\_Asset\Spine\spine-unity\Editor\AssetDatabaseAvailabilityDetector.cs" />

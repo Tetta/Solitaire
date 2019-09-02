@@ -21,7 +21,7 @@ public class ResizeUI : MonoBehaviour
     private void Awake() {
         //screenVert = Screen.currentResolution.height > Screen.currentResolution.width;
         screenVert = Screen.height > Screen.width;
-        updateView();
+        //updateView();
     }
 
     // Start is called before the first frame update
@@ -39,7 +39,7 @@ public class ResizeUI : MonoBehaviour
         screenVert2 = Screen.height > Screen.width;
         if (screenVert != screenVert2) {
             screenVert = screenVert2;
-            updateView();
+            //updateView();
 
         }
 
@@ -47,7 +47,7 @@ public class ResizeUI : MonoBehaviour
         //Debug.Log(screenW2);
         if (screenW1 != screenW2) {
             screenW1 = screenW2;
-            updateView();
+            //updateView();
 
         }
     }
