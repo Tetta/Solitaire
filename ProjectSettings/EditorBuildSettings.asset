@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Solitaire/Scenes/_Main.unity
-    guid: b5d1155dba533bb4c90a5dc034584945
+    path: Assets/_Asset/Scenes/Init.unity
+    guid: ddcd4f1a48e0bed4ea6d0ce64ed10487
+  - enabled: 1
+    path: Assets/_Asset/Scenes/KlondikeSolitaire.unity
+    guid: 6c2a54edef353d64a828702bdde1113b
+  - enabled: 1
+    path: Assets/_Asset/Scenes/Menus.unity
+    guid: ff834fff20d6cee419eb9a1703423a51
+  - enabled: 1
+    path: Assets/_Asset/Scenes/SpiderSolitaire.unity
+    guid: c3cc7f5b5bb7f264e93b667a616c42ff
+  - enabled: 1
+    path: Assets/_Asset/Scenes/TripeaksSolitaire.unity
+    guid: 0a66223ef7f4729409d2a9cea08bbdb0
   m_configObjects: {}

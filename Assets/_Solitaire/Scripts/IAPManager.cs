@@ -5,18 +5,26 @@ using System;
 using UnityEngine.Purchasing;
 public class IAPManager : MonoBehaviour
 {
+    public static IAPManager instance;
     public static bool vip = false;
     public GameObject subscribeCanvas;
     // Start is called before the first frame update
     void Awake()
     {
-        vip = Convert.ToBoolean(PlayerPrefs.GetInt("VIP", 0));
-        PlayerPrefs.SetInt("SESSIONS_COUNT", PlayerPrefs.GetInt("SESSIONS_COUNT", 0) + 1);
-        Debug.Log(PlayerPrefs.GetInt("SESSIONS_COUNT", 0));
-        //on 2 session
-        if (PlayerPrefs.GetInt("SESSIONS_COUNT", 0) >= 2 ) {
+        if (instance == null) {
+            instance = this;
+            vip = Convert.ToBoolean(PlayerPrefs.GetInt("VIP", 0));
+            PlayerPrefs.SetInt("SESSIONS_COUNT", PlayerPrefs.GetInt("SESSIONS_COUNT", 0) + 1);
+            Debug.Log(PlayerPrefs.GetInt("SESSIONS_COUNT", 0));
+            //on 2 session
+            if (PlayerPrefs.GetInt("SESSIONS_COUNT", 0) >= 2) {
 
-            ShowSubscriptionPanel("Start");
+                ShowSubscriptionPanel("Start");
+            }
+            DontDestroyOnLoad(gameObject);
+        }
+        else {
+            Destroy(gameObject);
         }
     }
 

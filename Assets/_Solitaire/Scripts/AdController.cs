@@ -16,6 +16,7 @@ public class AdController : MonoBehaviour {
     public static Action giveReward;
     public event Action OnInterstitialWatched;
 
+    public static int interstitialCounter;
     public static bool IsVideoReady
     {
         get
@@ -74,7 +75,7 @@ public class AdController : MonoBehaviour {
     public static void ShowInterstitial() {
         Debug.Log("ShowInterstitial");
         Debug.Log("IAPManager.vip: " + IAPManager.vip);
-        if (IsInterstitialReady && !IAPManager.vip/* && timerTicked*/) {
+        if (IsInterstitialReady && !IAPManager.vip/* && timerTicked*/ && interstitialCounter > 0) {
             Debug.Log("ShowInterstitial 2");
             //Pause(true);
             AnalyticsController.sendEvent("InterstitialShow");
@@ -82,6 +83,7 @@ public class AdController : MonoBehaviour {
            //Appodeal.show(Appodeal.INTERSTITIAL);
 
         }
+        interstitialCounter++;
     }
 
     public static void ShowRewarded() {

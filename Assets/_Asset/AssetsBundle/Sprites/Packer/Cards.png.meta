@@ -1,0 +1,872 @@
+fileFormatVersion: 2
+guid: 5250a9f51f0f35d42b4d49a081c84401
+timeCreated: 1501946933
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 2_Clubs
+    21300002: 2_Diamonds
+    21300004: 2_Hearts
+    21300006: '2_Spade '
+    21300008: 3_Clubs
+    21300010: 3_Diamonds
+    21300012: 3_Hearts
+    21300014: '3_Spade '
+    21300016: 4_Clubs
+    21300018: 4_Diamonds
+    21300020: 4_Hearts
+    21300022: '4_Spade '
+    21300024: 5_Clubs
+    21300026: 5_Diamonds
+    21300028: 5_Hearts
+    21300030: '5_Spade '
+    21300032: 6_Clubs
+    21300034: 6_Diamonds
+    21300036: 6_Hearts
+    21300038: '6_Spade '
+    21300040: 7_Clubs
+    21300042: 7_Diamonds
+    21300044: 7_Hearts
+    21300046: '7_Spade '
+    21300048: 8_Clubs
+    21300050: 8_Diamonds
+    21300052: 8_Hearts
+    21300054: '8_Spade '
+    21300056: 9_Clubs
+    21300058: 9_Diamonds
+    21300060: 9_Hearts
+    21300062: 9_Spade
+    21300064: 10_Clubs
+    21300066: 10_Diamonds
+    21300068: 10_Hearts
+    21300070: '10_Spade '
+    21300072: A_Clubs
+    21300074: A_Diamonds
+    21300076: A_Hearts
+    21300078: 'A_Spade '
+    21300080: Card_Back
+    21300082: J_Clubs
+    21300084: J_Diamonds
+    21300086: J_Hearts
+    21300088: 'J_Spade '
+    21300090: K_Clubs
+    21300092: K_Diamonds
+    21300094: K_Hearts
+    21300096: K_Spade
+    21300098: Q_Clubs
+    21300100: Q_Diamonds
+    21300102: 'Q_Hearts '
+    21300104: Q_Spade
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: -1
+    wrapV: -1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 2_Clubs
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 804
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 2_Diamonds
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 678
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 2_Hearts
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 678
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: '2_Spade '
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 678
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 3_Clubs
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 678
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 3_Diamonds
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 555
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 3_Hearts
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 429
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: '3_Spade '
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 429
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 4_Clubs
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 429
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 4_Diamonds
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 429
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 4_Hearts
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 555
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: '4_Spade '
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 1800
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 5_Clubs
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 1551
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 5_Diamonds
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 1302
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 5_Hearts
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 1053
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: '5_Spade '
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 804
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 6_Clubs
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 555
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 6_Diamonds
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 1800
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 6_Hearts
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 1551
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: '6_Spade '
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 1302
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 7_Clubs
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 1053
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 7_Diamonds
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 804
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 7_Hearts
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 555
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: '7_Spade '
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 1800
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 8_Clubs
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 1551
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 8_Diamonds
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 1302
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 8_Hearts
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 1053
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: '8_Spade '
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 804
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 9_Clubs
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 555
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 9_Diamonds
+      rect:
+        serializedVersion: 2
+        x: 1730
+        y: 1800
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 9_Hearts
+      rect:
+        serializedVersion: 2
+        x: 1730
+        y: 1551
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 9_Spade
+      rect:
+        serializedVersion: 2
+        x: 1730
+        y: 1302
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 10_Clubs
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 1800
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 10_Diamonds
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 1551
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 10_Hearts
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 1302
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: '10_Spade '
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 1053
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: A_Clubs
+      rect:
+        serializedVersion: 2
+        x: 1730
+        y: 1053
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: A_Diamonds
+      rect:
+        serializedVersion: 2
+        x: 1730
+        y: 804
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: A_Hearts
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 306
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 'A_Spade '
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 180
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Card_Back
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 927
+        width: 899
+        height: 1120
+      alignment: 9
+      pivot: {x: 0.5005562, y: 0.49419641}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: J_Clubs
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 180
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: J_Diamonds
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 180
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: J_Hearts
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 180
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 'J_Spade '
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 306
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: K_Clubs
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 306
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: K_Diamonds
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 306
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: K_Hearts
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 306
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: K_Spade
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 57
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Q_Clubs
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 57
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Q_Diamonds
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 57
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: 'Q_Hearts '
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 57
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Q_Spade
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 57
+        width: 205
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 3d5a4497cad019a4986cd45d49682a85
+timeCreated: 1502472450
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Bariol
+  fontNames:
+  - Bariol
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 69de79233059c89468d48a6945493864, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

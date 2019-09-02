@@ -1,0 +1,90 @@
+
+biker.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+beard1
+  rotate: false
+  xy: 2, 594
+  size: 515, 204
+  orig: 515, 204
+  offset: 0, 0
+  index: -1
+beard2
+  rotate: false
+  xy: 2, 388
+  size: 515, 204
+  orig: 515, 204
+  offset: 0, 0
+  index: -1
+beard3
+  rotate: false
+  xy: 2, 800
+  size: 515, 204
+  orig: 515, 204
+  offset: 0, 0
+  index: -1
+bike
+  rotate: true
+  xy: 275, 2
+  size: 384, 214
+  orig: 384, 214
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 814, 676
+  size: 205, 328
+  orig: 205, 328
+  offset: 0, 0
+  index: -1
+crown
+  rotate: false
+  xy: 904, 597
+  size: 107, 77
+  orig: 107, 77
+  offset: 0, 0
+  index: -1
+face
+  rotate: false
+  xy: 491, 32
+  size: 242, 275
+  orig: 242, 275
+  offset: 0, 0
+  index: -1
+foot
+  rotate: false
+  xy: 519, 611
+  size: 293, 393
+  orig: 293, 393
+  offset: 0, 0
+  index: -1
+hand
+  rotate: false
+  xy: 2, 11
+  size: 271, 375
+  orig: 271, 375
+  offset: 0, 0
+  index: -1
+hat
+  rotate: false
+  xy: 519, 309
+  size: 307, 300
+  orig: 307, 300
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: true
+  xy: 828, 150
+  size: 524, 74
+  orig: 524, 74
+  offset: 0, 0
+  index: -1
+wheel
+  rotate: true
+  xy: 735, 9
+  size: 139, 154
+  orig: 139, 154
+  offset: 0, 0
+  index: -1

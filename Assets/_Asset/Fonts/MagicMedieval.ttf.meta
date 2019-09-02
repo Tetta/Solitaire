@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: db08415fc781eef4bb5ac9fd39c6c141
+timeCreated: 1502299672
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: MagicMedieval
+  fontNames:
+  - MagicMedieval
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

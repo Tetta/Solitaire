@@ -1,0 +1,16 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:e7ffee99e44762e9e76a3b613d5ca570:72282d12a5d5bd4d63ca7718c405de1e:ac2a09a051655bd6173fe7639e8effa6$
+#
+:format=40300
+:texture=IconParticles.png
+:size=64x128
+:pivotpoints=enabled
+:borders=disabled
+
+Clubs Icon;1;67;60;60; 0.5;0.5; 0;0;0;0
+Diamonds Icon;1;5;60;60; 0.5;0.5; 0;0;0;0

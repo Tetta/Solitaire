@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: ca214f7550588cf4d9cb04e05ea11023
+timeCreated: 1502299672
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Clearlight
+  fontNames:
+  - Clearlight
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

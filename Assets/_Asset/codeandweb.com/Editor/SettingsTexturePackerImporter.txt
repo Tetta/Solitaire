@@ -1,0 +1,21 @@
+version: 2
+importPivots: 1
+tpsheetFileNames:
+- Assets/AssetsBundle/Sprites/Packer/Cards.tpsheet
+- Assets/AssetsBundle/Sprites/Packer/IconParticles.tpsheet
+- Assets/AssetsBundle/Sprites/Packer/UI.tpsheet
+- Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
+- Assets/Spider Solitaire/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
+textureFileNames:
+- Assets/AssetsBundle/Sprites/Packer/Cards.png
+- Assets/AssetsBundle/Sprites/Packer/IconParticles.png
+- Assets/AssetsBundle/Sprites/Packer/UI.png
+- Assets/codeandweb.com/Example/SpriteSheet/sprites.png
+- Assets/Spider Solitaire/codeandweb.com/Example/SpriteSheet/sprites.png
+normalmapFileNames:
+- 
+- 
+- 
+- Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+- Assets/Spider Solitaire/codeandweb.com/Example/SpriteSheet/sprites_n.png
+enableDebugOutput: 0
