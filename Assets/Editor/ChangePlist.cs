@@ -21,7 +21,7 @@ public class ChangePlist : MonoBehaviour {
             // Change value of CFBundleVersion in Xcode plist
             rootDict.SetString("NSLocationAlwaysUsageDescription", "Application needs Location access for ads optimization!");
             rootDict.SetString("NSLocationWhenInUseUsageDescription", "Application needs Location access for ads optimization!");
-            rootDict.SetString("GADApplicationIdentifier", "ca-app-pub-3940256099942544~1458002511");
+            rootDict.SetString("GADApplicationIdentifier", "ca-app-pub-3880440933547356~8307825158");
             // Write to file
             File.WriteAllText(plistPath, plist.WriteToString());
 

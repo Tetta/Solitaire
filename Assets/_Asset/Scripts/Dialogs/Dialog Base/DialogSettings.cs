@@ -106,6 +106,8 @@ public class DialogSettings : DialogInterface {
         // TODO: Set the dafault toggle.
         DefaultToggle();
 
+        if (IAPManager.vip) UIRemoveAds.gameObject.SetActive(false);
+
         if ( Contains.IsHavingRemoveAd )
         {
             UIRemoveAds.interactable = false;
@@ -358,24 +360,25 @@ public class DialogSettings : DialogInterface {
 
     public void RemoveAds()
     {
-        if ( !AdSystem.Instance.IsUseAdmob )
-        {
-            return;
-        }
+        IAPManager.instance.ShowSubscriptionPanel("RemoveAdsClick");
+        /*
 
-        if (Contains.IsHavingRemoveAd)
-        {
-            return;
-        }
+            if (!AdSystem.Instance.IsUseAdmob) {
+                return;
+            }
 
-        SoundSystems.Instance.PlaySound(Enums.SoundIndex.Press);
+            if (Contains.IsHavingRemoveAd) {
+                return;
+            }
 
-        DialogSystem.Instance.ShowDialogMessage( string.Format ( "Would you like to remove ads with {0}" , IapManager.Instance.ReturnThePrice()), "REMOVE ADS", "OK", "Not really", ()=> {
+            SoundSystems.Instance.PlaySound(Enums.SoundIndex.Press);
 
-            IapManager.Instance.BuyNonConsumable();
+            DialogSystem.Instance.ShowDialogMessage(string.Format("Would you like to remove ads with {0}", IapManager.Instance.ReturnThePrice()), "REMOVE ADS", "OK", "Not really", () => {
 
-        });
+                IapManager.Instance.BuyNonConsumable();
 
+            });
+        */
     }
 
     public void RestorePurchase()

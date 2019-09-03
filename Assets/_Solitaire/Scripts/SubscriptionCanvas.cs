@@ -62,16 +62,16 @@ public class SubscriptionCanvas : MonoBehaviour
 
 		if (_panelStartPosition == Vector3.one)
 		{
-			_panelStartPosition = _panel.transform.position;
+			//_panelStartPosition = _panel.transform.position;
 			//_closeButtonStartColor = _closeButtonRect.GetComponent<Image>().color;
 		}
 		else
 		{
-			_panel.transform.position = _panelStartPosition;
+			//_panel.transform.position = _panelStartPosition;
 			//_closeButtonRect.GetComponent<Image>().color = _closeButtonStartColor;
 		}
 
-		LeanTween.moveLocalY(_panel, 0f, _panelMoveTime).setEase(LeanTweenType.easeOutQuint);
+		//LeanTween.moveLocalY(_panel, 0f, _panelMoveTime).setEase(LeanTweenType.easeOutQuint);
 
         _alreadyShown = false;
         closeButton1.gameObject.SetActive(false);

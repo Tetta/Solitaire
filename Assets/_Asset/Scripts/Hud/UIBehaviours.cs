@@ -75,13 +75,14 @@ public class UIBehaviours : Singleton < UIBehaviours > {
 
         if (!IAPManager.vip)// AdSystem.Instance.IsBannerShowed && IsMovingTop == false && IsRemoveAds == false)
         {
-            UIBottom.DOAnchorPosY(280f, 0.3f);
+            //UIBottom.DOAnchorPosY(280f, 0.3f);
+            UIBottom.DOAnchorPosY(420f, 0.3f);
 
             IsMovingTop = true;
         }
         else //if (AdSystem.Instance.IsBannerShowed == false && IsMovingTop == true || AdSystem.Instance.IsUseAdmob == false || IsRemoveAds)
         {
-			UIBottom.DOAnchorPosY(65f, 0.3f);
+			UIBottom.DOAnchorPosY(165f, 0.3f);
 
             IsMovingTop = false;
         }
