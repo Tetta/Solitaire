@@ -17,8 +17,8 @@ public class CardBehaviour : MonoBehaviour , IDragHandler , IBeginDragHandler , 
 	/// <summary>
 	/// The cache of transform.
 	/// </summary>
-    ///fix 
-	//protected new Transform transform;
+
+	protected new Transform transform;
 
     [HideInInspector]
     /// <summary>
@@ -106,8 +106,8 @@ public class CardBehaviour : MonoBehaviour , IDragHandler , IBeginDragHandler , 
 	void Awake()
 	{
 		// TODO: Set the cache of transform.
-        //fix
-		//transform = gameObject.transform;
+
+		transform = gameObject.transform;
 
 		// TODO: Get the default of cards.
 		UIRenderer.sprite = DataSystem.Instance.GetDefaultCard(Contains.GetThemeType);
@@ -352,8 +352,7 @@ public class CardBehaviour : MonoBehaviour , IDragHandler , IBeginDragHandler , 
 			// TODO: Break the functions.
 			return;
 		}
-        //fix
-        //TargetPosition = transform.position;
+
         // TODO: Reset the state of touching.
         stateTouched = Enums.StateTouch.None;
         //Debug.Log("--TargetPosition: " + TargetPosition);
@@ -645,7 +644,8 @@ public class CardBehaviour : MonoBehaviour , IDragHandler , IBeginDragHandler , 
 			return;
 		}
 
-		// TODO: Create the cache of UIRenderer.
+        // TODO: Create the cache of UIRenderer.
+
 		Transform TUIRenderer = UIRenderer.transform;
 
 		// TODO: Stop the state of transform if it is using Dotween.
@@ -658,28 +658,41 @@ public class CardBehaviour : MonoBehaviour , IDragHandler , IBeginDragHandler , 
 			isUnlock = IsUnlocking;
 
 			// TODO: Scale the image to zero.
-			TUIRenderer.DOScale (new Vector3 (0, 1.1f, 0), Contains.DurationFade / 2).OnComplete (() => {	
-				
-				// TODO: Scale the image to one.
-				TUIRenderer.DOScale ( new Vector3 ( 1, 1, 0 ) , Contains.DurationFade / 2 ).OnStart ( ()=> {
-					// TODO: Check the state of unlock.
-					if ( IsUnlocking )
+			TUIRenderer.DOScale (new Vector3 (0, 1.1f, 0), Contains.DurationFade / 2).OnComplete (() => {
+                Debug.Log(1);
+                Debug.Log(UIRenderer.transform.localScale);
+                // TODO: Scale the image to one.
+                TUIRenderer.DOScale ( new Vector3 ( 1, 1, 1 ) , Contains.DurationFade / 2 ).OnStart ( ()=> {
+                    Debug.Log(2);
+                    Debug.Log(UIRenderer.transform.localScale);
+                    // TODO: Check the state of unlock.
+                    if ( IsUnlocking )
 					{
-						// TODO: Set the sprite unlocked.
-						UIRenderer.sprite = properties.GetCardSprite ();
+                        Debug.Log(3);
+                        Debug.Log(UIRenderer.transform.localScale);
+                        // TODO: Set the sprite unlocked.
+                        UIRenderer.sprite = properties.GetCardSprite ();
 
 					}else{
-						
-						// TODO: Set the sprite locked.
-						UIRenderer.sprite = DataSystem.Instance.GetDefaultCard(Contains.GetThemeType);
+
+                        Debug.Log(4);
+                        Debug.Log(UIRenderer.transform.localScale);
+                        // TODO: Set the sprite locked.
+                        UIRenderer.sprite = DataSystem.Instance.GetDefaultCard(Contains.GetThemeType);
 					}
 				}).OnComplete ( ()=>
 					{
-						// TODO: Check if the callback does not null.
-						if ( OnCompleted != null )
+                        Debug.Log(5);
+                        Debug.Log(UIRenderer.transform.localScale);
+                        //UIRenderer.transform.localScale = new Vector3(1, 1, 1);
+                        // TODO: Check if the callback does not null.
+                        if ( OnCompleted != null )
 						{
-							// TODO: Run the callback.
-							OnCompleted ();
+                            Debug.Log(6);
+                            
+                            Debug.Log(UIRenderer.transform.localScale);
+                            // TODO: Run the callback.
+                            OnCompleted();
 						}
 					});			
 			});				

@@ -7,6 +7,8 @@ public class IAPManager : MonoBehaviour
 {
     public static IAPManager instance;
     public static bool vip = false;
+
+
     public GameObject subscribeCanvas;
     // Start is called before the first frame update
     void Awake()
@@ -28,7 +30,9 @@ public class IAPManager : MonoBehaviour
         }
     }
 
-
+    public void vipTestClick (bool v) {
+        vip = v;
+    }
 
     public void buySubscription( Product product) {
 

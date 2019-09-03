@@ -22,30 +22,37 @@ public class UIMenus : MonoBehaviour {
 		LoadingBehaviour.Instance.ShowLoading (Contains.GamePlayScene);
 	}
 
-	public void OpenSpider()
-	{
-		GameManager.Instance.GameType = Enums.GameScenes.Spider;
+    public void OpenSpider() {
+        //point
+        if (!IAPManager.vip) IAPManager.instance.ShowSubscriptionPanel("OpenSpider");
+        else {
+        GameManager.Instance.GameType = Enums.GameScenes.Spider;
 
-		SoundSystems.Instance.PlaySound (Enums.SoundIndex.Press);
+        SoundSystems.Instance.PlaySound(Enums.SoundIndex.Press);
 
-		// TODO: Get the scene loaded.
-		Contains.GamePlayScene = Enums._GameScene [(int)GameManager.Instance.GameType];
+        // TODO: Get the scene loaded.
+        Contains.GamePlayScene = Enums._GameScene[(int)GameManager.Instance.GameType];
 
-		// TODO: Show the loadings.
-		LoadingBehaviour.Instance.ShowLoading (Contains.GamePlayScene);
+        // TODO: Show the loadings.
+        LoadingBehaviour.Instance.ShowLoading(Contains.GamePlayScene);
+        }
 	}
 
 	public void OpenTripeaks()
 	{
-		GameManager.Instance.GameType = Enums.GameScenes.Tripeaks;
+        //point
+        if (!IAPManager.vip) IAPManager.instance.ShowSubscriptionPanel("OpenTripeaks");
+        else {
+            GameManager.Instance.GameType = Enums.GameScenes.Tripeaks;
 
-		SoundSystems.Instance.PlaySound (Enums.SoundIndex.Press);
+            SoundSystems.Instance.PlaySound(Enums.SoundIndex.Press);
 
-		// TODO: Get the scene loaded.
-		Contains.GamePlayScene = Enums._GameScene [(int)GameManager.Instance.GameType];
+            // TODO: Get the scene loaded.
+            Contains.GamePlayScene = Enums._GameScene[(int)GameManager.Instance.GameType];
 
-		// TODO: Show the loadings.
-		LoadingBehaviour.Instance.ShowLoading (Contains.GamePlayScene);
+            // TODO: Show the loadings.
+            LoadingBehaviour.Instance.ShowLoading(Contains.GamePlayScene);
+        }
 	}
 
 	void OnDisable()

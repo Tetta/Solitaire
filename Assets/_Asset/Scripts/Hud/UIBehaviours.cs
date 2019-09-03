@@ -73,7 +73,7 @@ public class UIBehaviours : Singleton < UIBehaviours > {
     {
         bool IsRemoveAds = Contains.IsHavingRemoveAd;
 
-        if (IAPManager.vip)// AdSystem.Instance.IsBannerShowed && IsMovingTop == false && IsRemoveAds == false)
+        if (!IAPManager.vip)// AdSystem.Instance.IsBannerShowed && IsMovingTop == false && IsRemoveAds == false)
         {
             UIBottom.DOAnchorPosY(280f, 0.3f);
 
@@ -87,9 +87,9 @@ public class UIBehaviours : Singleton < UIBehaviours > {
         }
 
         //if (AdSystem.Instance.IsUseAdmob == false || IsRemoveAds)
-        //{
-        //    CancelInvoke();
-        //}
+        if (IAPManager.vip) { 
+            CancelInvoke();
+        }
     }
 
 	public void UpdateScore()
@@ -287,7 +287,7 @@ public class UIBehaviours : Singleton < UIBehaviours > {
 
 
         //fix
-        if (!IAPManager.vip) IAPManager.instance.ShowSubscriptionPanel("HintClick");
+        if (!IAPManager.vip) IAPManager.instance.ShowSubscriptionPanel("UndoClick");
         else {
 
             // TODO: Turn off hint.

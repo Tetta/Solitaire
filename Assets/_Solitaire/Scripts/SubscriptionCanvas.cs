@@ -37,7 +37,7 @@ public class SubscriptionCanvas : MonoBehaviour
     bool screenVert2;
     private void Awake() {
 
-        screenVert = Screen.currentResolution.height > Screen.currentResolution.width;
+        screenVert = Screen.height > Screen.width;
     }
     private void Start ()
 	{
@@ -118,7 +118,7 @@ public class SubscriptionCanvas : MonoBehaviour
 
     private void Update() {
         
-        screenVert2 = Screen.currentResolution.height > Screen.currentResolution.width;
+        screenVert2 = Screen.height > Screen.width;
         if (screenVert != screenVert2) {
             screenVert = screenVert2;
             updateView();

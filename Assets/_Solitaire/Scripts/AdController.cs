@@ -164,15 +164,17 @@ public class AdController : MonoBehaviour {
 
 
 
-    public void showBanner2() {
+    public void showBannerTest() {
         showBanner();
     }
     public static void showBanner() {
         //fix
-        //if (!IAPManager.vip)
-        Debug.Log("showBanner");
+        if (!IAPManager.vip && !IAPManager.instance.subscribeCanvas.activeSelf) {
+            Debug.Log("showBanner");
+
+            IronSource.Agent.displayBanner();
+        }
         
-        IronSource.Agent.displayBanner();
     }
     public static void hideBanner () {
         IronSource.Agent.hideBanner();

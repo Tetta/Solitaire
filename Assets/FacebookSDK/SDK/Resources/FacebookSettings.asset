@@ -16,9 +16,9 @@ MonoBehaviour:
   clientTokens:
   - 
   appIds:
-  - 377426302891401
+  - 720341461761261
   appLabels:
-  - App Name
+  - Solitaire
   cookie: 1
   logging: 1
   status: 1

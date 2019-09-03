@@ -18,7 +18,9 @@ public class ResizeUI : MonoBehaviour
     int screenW1;
 
     int screenW2;
+    int screenH1;
 
+    int screenH2;
     float cameraSizeAwake;
     float dDefault;
     private void Awake() {
@@ -51,26 +53,50 @@ public class ResizeUI : MonoBehaviour
         //}
 
         screenW2 = Screen.width;
+        screenH2 = Screen.height;
         //Debug.Log(screenW2);
-        if (screenW1 != screenW2) {
+        if (screenW1 != screenW2 || screenH1 != screenH2) {
             screenW1 = screenW2;
+            screenH1 = screenH2;
             //updateView();
             updateView2();
         }
     }
     void updateView2() {
+
+
+
         float d = (float)Screen.width / Screen.height;
         float scale = dDefault / d;
-        Camera.main.orthographicSize = 10.24f * scale;
+
+
+
         Debug.Log("scale " + scale);
 
-        if (d > 0.46f && d < 1) {
-            d = d - 0.46f;
-            Debug.Log(d);
-            d = (d / 0.01f) * (-43.1f);
-            Debug.Log(d);
-            d = 3350 + d;
-            Debug.Log(d);
+        //if (d > 0.4618f && d < 1) {
+        // d = d - 0.4618f;
+        // Debug.Log(d);
+        //d = (d / 0.01f) * (-60);// (-44.48f);
+        //Debug.Log(d);
+        //d = 3350 + d;
+
+        //Debug.Log(d);
+        //d = (float)Screen.height / Screen.width * 1500 + 100;
+
+        d = (float)Screen.height / Screen.width * 1550;
+
+        if ((GameManager.Instance.GameType == Enums.GameScenes.Klondike || GameManager.Instance.GameType == Enums.GameScenes.Tripeaks) && d < 1550) {
+            float ration = d / 1550;
+            scale = scale / ration;
+            d = 1550;
+
+        } else if (GameManager.Instance.GameType == Enums.GameScenes.Spider && d < 2200) {
+            float ration = d / 2200;
+            scale = scale / ration;
+            d = 2200;
+        }
+                Camera.main.orthographicSize = 10f * scale;
+
             resultCanvas.referenceResolution = new Vector2(1500, d);
             playingCanvas.referenceResolution = new Vector2(1500, d);
             hintCanvas.referenceResolution = new Vector2(1500, d);
@@ -79,8 +105,10 @@ public class ResizeUI : MonoBehaviour
             helperHintCanvas.referenceResolution = new Vector2(1500, d);
             resultCanvas.referenceResolution = new Vector2(1500, d);
 
-            Camera.main.transform.position = new Vector3(-251, 157 - (1 - scale) * 10.15f);
-        }
+        //resultCanvas.transform.parent.scal
+            Camera.main.transform.localPosition = new Vector3(-251, -157 + (1 - scale) * 10f);
+            Debug.Log("cam pos " + new Vector3(-251, -157 + (1 - scale) * 10f));
+        //}
 
 
     }

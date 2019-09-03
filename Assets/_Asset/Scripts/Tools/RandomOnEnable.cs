@@ -17,7 +17,7 @@ public class RandomOnEnable : MonoBehaviour {
 			}
 		}
         //point backgrounds
-        //transforms[1].gameObject.SetActive(true);
-        transforms [Random.Range (0, transforms.Length)].gameObject.SetActive (true);
+        transforms[0].gameObject.SetActive(true);
+        //transforms [Random.Range (0, transforms.Length)].gameObject.SetActive (true);
 	}
 }
