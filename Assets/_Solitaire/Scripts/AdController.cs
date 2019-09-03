@@ -79,7 +79,7 @@ public class AdController : MonoBehaviour {
             Debug.Log("ShowInterstitial 2");
             //Pause(true);
             AnalyticsController.sendEvent("InterstitialShow");
-
+            IronSource.Agent.showInterstitial();
            //Appodeal.show(Appodeal.INTERSTITIAL);
 
         }
