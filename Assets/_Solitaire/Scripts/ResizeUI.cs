@@ -90,10 +90,10 @@ public class ResizeUI : MonoBehaviour
             scale = scale / ration;
             d = 1550;
 
-        } else if (GameManager.Instance.GameType == Enums.GameScenes.Spider && d < 2200) {
-            float ration = d / 2200;
+        } else if (GameManager.Instance.GameType == Enums.GameScenes.Spider && d < 2400) {
+            float ration = d / 2400;
             scale = scale / ration;
-            d = 2200;
+            d = 2400;
         }
                 Camera.main.orthographicSize = 10f * scale;
 
