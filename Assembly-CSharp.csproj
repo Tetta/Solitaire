@@ -60,45 +60,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Api\AdFailedToLoadEventArgs.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Api\AdLoader.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Api\AdPosition.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Api\AdRequest.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Api\AdSize.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Api\BannerView.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Api\CustomNativeEventArgs.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Api\CustomNativeTemplateAd.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Api\Gender.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Api\InterstitialAd.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Api\Mediation\MediationExtras.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Api\NativeExpressAdView.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Api\Reward.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Api\RewardBasedVideoAd.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Common\DummyClient.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Common\IAdLoaderClient.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Common\IBannerClient.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Common\ICustomNativeTemplateClient.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Common\IInterstitialClient.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Common\INativeExpressAdClient.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Common\IRewardBasedVideoAdClient.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Common\Utils.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Platforms\Android\AdLoaderClient.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Platforms\Android\BannerClient.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Platforms\Android\CustomNativeTemplateClient.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Platforms\Android\InterstitialClient.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Platforms\Android\NativeExpressAdClient.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Platforms\Android\RewardBasedVideoAdClient.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Platforms\Android\Utils.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Platforms\GoogleMobileAdsClientFactory.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Platforms\iOS\AdLoaderClient.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Platforms\iOS\BannerClient.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Platforms\iOS\CustomNativeTemplateClient.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Platforms\iOS\Externs.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Platforms\iOS\InterstitialClient.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Platforms\iOS\MonoPInvokeCallbackAttribute.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Platforms\iOS\NativeExpressAdClient.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Platforms\iOS\RewardBasedVideoAdClient.cs" />
-    <Compile Include="Assets\_Asset\GoogleMobileAds\Platforms\iOS\Utils.cs" />
     <Compile Include="Assets\_Asset\Scripts\Ads Network\AdSystem.cs" />
     <Compile Include="Assets\_Asset\Scripts\Background\BackgroundBehaviours.cs" />
     <Compile Include="Assets\_Asset\Scripts\Cards\CardBehaviour.cs" />

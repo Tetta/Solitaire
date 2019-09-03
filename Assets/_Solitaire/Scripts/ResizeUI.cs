@@ -18,10 +18,17 @@ public class ResizeUI : MonoBehaviour
     int screenW1;
 
     int screenW2;
+
+    float cameraSizeAwake;
+    float dDefault;
     private void Awake() {
         //screenVert = Screen.currentResolution.height > Screen.currentResolution.width;
-        screenVert = Screen.height > Screen.width;
+        //screenVert = Screen.height > Screen.width;
         //updateView();
+        cameraSizeAwake = Camera.main.orthographicSize;
+        dDefault = (float)Screen.width / Screen.height;
+        updateView2();
+
     }
 
     // Start is called before the first frame update
@@ -36,20 +43,46 @@ public class ResizeUI : MonoBehaviour
 
 
         //screenVert2 = Screen.currentResolution.height > Screen.currentResolution.width;
-        screenVert2 = Screen.height > Screen.width;
-        if (screenVert != screenVert2) {
-            screenVert = screenVert2;
+        //screenVert2 = Screen.height > Screen.width;
+        //if (screenVert != screenVert2) {
+        //    screenVert = screenVert2;
             //updateView();
 
-        }
+        //}
 
         screenW2 = Screen.width;
         //Debug.Log(screenW2);
         if (screenW1 != screenW2) {
             screenW1 = screenW2;
             //updateView();
-
+            updateView2();
         }
+    }
+    void updateView2() {
+        float d = (float)Screen.width / Screen.height;
+        float scale = dDefault / d;
+        Camera.main.orthographicSize = 10.24f * scale;
+        Debug.Log("scale " + scale);
+
+        if (d > 0.46f && d < 1) {
+            d = d - 0.46f;
+            Debug.Log(d);
+            d = (d / 0.01f) * (-43.1f);
+            Debug.Log(d);
+            d = 3350 + d;
+            Debug.Log(d);
+            resultCanvas.referenceResolution = new Vector2(1500, d);
+            playingCanvas.referenceResolution = new Vector2(1500, d);
+            hintCanvas.referenceResolution = new Vector2(1500, d);
+            drawCanvas.referenceResolution = new Vector2(1500, d);
+            helperGroundsCanvas.referenceResolution = new Vector2(1500, d);
+            helperHintCanvas.referenceResolution = new Vector2(1500, d);
+            resultCanvas.referenceResolution = new Vector2(1500, d);
+
+            Camera.main.transform.position = new Vector3(-251, 157 - (1 - scale) * 10.15f);
+        }
+
+
     }
     void updateView() {
         

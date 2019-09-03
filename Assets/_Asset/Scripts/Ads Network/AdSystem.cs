@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using GoogleMobileAds.Api;
+//using GoogleMobileAds.Api;
 
 /// <summary>
 /// Ad system.
@@ -43,12 +43,12 @@ public class AdSystem : Singleton<AdSystem>
 	/// <summary>
 	/// The banner.
 	/// </summary>
-    BannerView banner;
+    //BannerView banner;
 
 	/// <summary>
 	/// The interstitial ad.
 	/// </summary>
-    InterstitialAd interstitialAd;
+    //InterstitialAd interstitialAd;
 
 	/// <summary>
 	/// The banner android ad unit I.
@@ -85,11 +85,11 @@ public class AdSystem : Singleton<AdSystem>
 
     void InitDelegate()
     {
-        if ( banner != null )
-        {
-            banner.OnAdClosed += Banner_OnAdClosed;
-            banner.OnAdLoaded += Banner_OnAdLoaded;
-        }
+        //if ( banner != null )
+        //{
+        //    banner.OnAdClosed += Banner_OnAdClosed;
+        //    banner.OnAdLoaded += Banner_OnAdLoaded;
+        //}
     }
 
     private void Banner_OnAdLoaded(object sender, System.EventArgs e)
@@ -107,7 +107,8 @@ public class AdSystem : Singleton<AdSystem>
     /// </summary>
     public void ShowInterstitialAd()
     {
-		if (Contains.IsHavingRemoveAd)
+        /*
+        if (Contains.IsHavingRemoveAd)
 			return;
 
         if (!IsUseAdmob)
@@ -130,6 +131,7 @@ public class AdSystem : Singleton<AdSystem>
         {
             RequestInterstitial();
         }
+        */
     }
 
 	/// <summary>
@@ -137,10 +139,12 @@ public class AdSystem : Singleton<AdSystem>
 	/// </summary>
     public void HideInterstitialAd()
     {
+        /*
         if (interstitialAd != null)
         {
             interstitialAd.Destroy();
         }
+        */
     }
 
 	/// <summary>
@@ -148,7 +152,8 @@ public class AdSystem : Singleton<AdSystem>
 	/// </summary>
     public void ShowBanner()
     {
-		if (Contains.IsHavingRemoveAd)
+        /*
+        if (Contains.IsHavingRemoveAd)
 			return;
 
         if (!IsUseAdmob)
@@ -172,6 +177,7 @@ public class AdSystem : Singleton<AdSystem>
         {
             RequestBanner();
         }
+        */
     }
 
 	/// <summary>
@@ -179,12 +185,14 @@ public class AdSystem : Singleton<AdSystem>
 	/// </summary>
     public void HideBanner()
     {
+        /*
         if ( banner != null )
         {
             banner.Hide();
         }
 
         IsBannerShowed = false;
+        */
     }
 
 	/// <summary>
@@ -192,6 +200,7 @@ public class AdSystem : Singleton<AdSystem>
 	/// </summary>
     private void RequestBanner()
     {
+        /*
 #if UNITY_EDITOR
         string adUnitId = "unused";
 #elif UNITY_ANDROID
@@ -208,6 +217,7 @@ public class AdSystem : Singleton<AdSystem>
         AdRequest request = new AdRequest.Builder().Build();
         // Load the banner with the request.
         banner.LoadAd(request);
+        */
     }
 
 		/// <summary>
@@ -215,6 +225,7 @@ public class AdSystem : Singleton<AdSystem>
 		/// </summary>
     private void RequestInterstitial()
     {
+        /*
 #if UNITY_ANDROID
         string adUnitId = InterstitialAndroidAdUnityID;
 #elif UNITY_IOS
@@ -229,6 +240,7 @@ public class AdSystem : Singleton<AdSystem>
         AdRequest request = new AdRequest.Builder().Build();
         // Load the interstitial with the request.
         interstitialAd.LoadAd(request);
+        */
     }
 
     #endregion

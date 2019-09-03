@@ -73,23 +73,23 @@ public class UIBehaviours : Singleton < UIBehaviours > {
     {
         bool IsRemoveAds = Contains.IsHavingRemoveAd;
 
-        if ( AdSystem.Instance.IsBannerShowed && IsMovingTop == false && IsRemoveAds == false)
+        if (IAPManager.vip)// AdSystem.Instance.IsBannerShowed && IsMovingTop == false && IsRemoveAds == false)
         {
             UIBottom.DOAnchorPosY(280f, 0.3f);
 
             IsMovingTop = true;
         }
-        else if (AdSystem.Instance.IsBannerShowed == false && IsMovingTop == true || AdSystem.Instance.IsUseAdmob == false || IsRemoveAds)
+        else //if (AdSystem.Instance.IsBannerShowed == false && IsMovingTop == true || AdSystem.Instance.IsUseAdmob == false || IsRemoveAds)
         {
 			UIBottom.DOAnchorPosY(65f, 0.3f);
 
             IsMovingTop = false;
         }
 
-        if (AdSystem.Instance.IsUseAdmob == false || IsRemoveAds)
-        {
-            CancelInvoke();
-        }
+        //if (AdSystem.Instance.IsUseAdmob == false || IsRemoveAds)
+        //{
+        //    CancelInvoke();
+        //}
     }
 
 	public void UpdateScore()
