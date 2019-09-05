@@ -11,10 +11,10 @@ tpsheetFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
 - Assets/Spider Solitaire/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
 textureFileNames:
-- Assets/_Asset/AssetsBundle/Sprites/Packer/Cards.png
-- Assets/_Asset/AssetsBundle/Sprites/Packer/IconParticles.png
-- Assets/_Asset/AssetsBundle/Sprites/Packer/UI.png
-- Assets/_Asset/codeandweb.com/Example/SpriteSheet/sprites.png
+- Assets\_Asset\AssetsBundle\Sprites\Packer/Cards.png
+- Assets\_Asset\AssetsBundle\Sprites\Packer/IconParticles.png
+- Assets\_Asset\AssetsBundle\Sprites\Packer/UI.png
+- Assets\_Asset\codeandweb.com\Example\SpriteSheet/sprites.png
 - Assets/AssetsBundle/Sprites/Packer/Cards.png
 - Assets/AssetsBundle/Sprites/Packer/IconParticles.png
 - Assets/AssetsBundle/Sprites/Packer/UI.png
@@ -24,7 +24,7 @@ normalmapFileNames:
 - 
 - 
 - 
-- Assets/_Asset/codeandweb.com/Example/SpriteSheet/sprites_n.png
+- Assets\_Asset\codeandweb.com\Example\SpriteSheet/sprites_n.png
 - 
 - 
 - 
