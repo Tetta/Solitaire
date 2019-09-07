@@ -67,7 +67,8 @@ public class IAPManager : MonoBehaviour
         subscribeCanvas.SetActive(false);
         //panel2
         subscribeCanvas.transform.parent.GetChild(1).gameObject.SetActive(false);
-
+        //panel3
+        subscribeCanvas.transform.parent.GetChild(2).gameObject.SetActive(false);
     }
     public void onPrivacyClick() {
         Application.OpenURL("https://docs.google.com/document/d/1FkOeftcs8gF9gZYcTyEXGgihmkdCb60x7Z1Q1o8ixbo/edit?usp=sharing");

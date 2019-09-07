@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using System;
 public class SubscriptionCanvas : MonoBehaviour
 {
     public Text closeButton1;
@@ -12,14 +12,15 @@ public class SubscriptionCanvas : MonoBehaviour
 
     [SerializeField] private GameObject _panel;
     [SerializeField] private GameObject _panel2;
+    [SerializeField] private GameObject _panel3;
     //[SerializeField] private Button _privacyPolicyButton;
-	//[SerializeField] private Button _termsButton;
-	//[SerializeField] private Button _closeButton;
-	//[SerializeField] private RectTransform _closeButtonRect;
-	//[SerializeField] private Text _bottomText;
+    //[SerializeField] private Button _termsButton;
+    //[SerializeField] private Button _closeButton;
+    //[SerializeField] private RectTransform _closeButtonRect;
+    //[SerializeField] private Text _bottomText;
 
-	
-	[SerializeField] private float _closeWaitTime = 3f;
+
+    [SerializeField] private float _closeWaitTime = 3f;
 	[SerializeField] private float _panelMoveTime = 1f;
 
 	//[Space] [Header("Data")] 
@@ -35,6 +36,8 @@ public class SubscriptionCanvas : MonoBehaviour
     //public static string from = "";
     bool screenVert;
     bool screenVert2;
+
+    string vipDate = "09/11/2019"; //MM/dd/yyyy
     private void Awake() {
 
         screenVert = Screen.height > Screen.width;
@@ -60,25 +63,13 @@ public class SubscriptionCanvas : MonoBehaviour
 	{
         AdController.hideBanner();
 
-		if (_panelStartPosition == Vector3.one)
-		{
-			//_panelStartPosition = _panel.transform.position;
-			//_closeButtonStartColor = _closeButtonRect.GetComponent<Image>().color;
-		}
-		else
-		{
-			//_panel.transform.position = _panelStartPosition;
-			//_closeButtonRect.GetComponent<Image>().color = _closeButtonStartColor;
-		}
-
-		//LeanTween.moveLocalY(_panel, 0f, _panelMoveTime).setEase(LeanTweenType.easeOutQuint);
-
         _alreadyShown = false;
         closeButton1.gameObject.SetActive(false);
         closeButton11.gameObject.SetActive(false);
         StartCoroutine(WaitAndPrint());
         AnalyticsController .sendEvent("SubscriptionShown", new Dictionary<string, object> {  { "From", AnalyticsController.subscriptionFrom } });
 
+        _panel3.SetActive(DateTime.Now < DateTime.ParseExact(vipDate, "MM/dd/yyyy", null));
     }
 
     public void showPanel2 () {
