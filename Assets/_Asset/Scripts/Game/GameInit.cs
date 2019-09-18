@@ -14,10 +14,10 @@ public class GameInit : MonoBehaviour {
 		ConfigApplication ();
 
 		// TODO: Get the scene loaded.
-		Contains.GamePlayScene = Enums._GameScene [(int)Enums.GameScenes.Menus];
+		//Contains.GamePlayScene = Enums._GameScene [(int)Enums.GameScenes.Menus];
 
 		// TODO: Show the loadings.
-		LoadingBehaviour.Instance.ShowLoading (Contains.GamePlayScene);
+		//LoadingBehaviour.Instance.ShowLoading (Contains.GamePlayScene);
 	}
 
 	public void ConfigApplication()

@@ -37,7 +37,8 @@ public class UIBehaviours : Singleton < UIBehaviours > {
 
 	protected void Start()
 	{
-		// TODO: Update the time.
+        Debug.Log("UIBehaviours Start");
+        // TODO: Update the time.
 		UpdateTime (0);
 
 		// TODO: Update the score.
@@ -72,17 +73,17 @@ public class UIBehaviours : Singleton < UIBehaviours > {
     protected void UpdateAds()
     {
         bool IsRemoveAds = Contains.IsHavingRemoveAd;
-
+        //point bottom panel
         if (!IAPManager.vip)// AdSystem.Instance.IsBannerShowed && IsMovingTop == false && IsRemoveAds == false)
         {
             //UIBottom.DOAnchorPosY(280f, 0.3f);
-            UIBottom.DOAnchorPosY(420f, 0.3f);
+            UIBottom.DOAnchorPosY(370f, 0.3f);
 
             IsMovingTop = true;
         }
         else //if (AdSystem.Instance.IsBannerShowed == false && IsMovingTop == true || AdSystem.Instance.IsUseAdmob == false || IsRemoveAds)
         {
-			UIBottom.DOAnchorPosY(165f, 0.3f);
+			UIBottom.DOAnchorPosY(125f, 0.3f);
 
             IsMovingTop = false;
         }
@@ -181,9 +182,16 @@ public class UIBehaviours : Singleton < UIBehaviours > {
 		HintDisplay.Instance.DisableHint();
 	}
 
-	public void DoNewGame()
+    public void DoChangeMode() {
+
+        DialogSystem.Instance.ShowDialogNewGame();
+    }
+
+    public void DoNewGame()
 	{
-        DoNewGame(true);
+        GamePlay.autoWinShown = false;
+        DoNewGame(false);
+        
     }
 
     public void DoNewGame(bool IsShowDialog)
@@ -287,8 +295,12 @@ public class UIBehaviours : Singleton < UIBehaviours > {
         SoundSystems.Instance.PlaySound (Enums.SoundIndex.Press);
 
 
-        //fix
-        if (!IAPManager.vip) IAPManager.instance.ShowSubscriptionPanel("UndoClick");
+        //point
+        bool flag = IAPManager.vip;
+#if UNITY_ANDROID
+        flag = true;
+#endif
+        if (!flag) IAPManager.instance.ShowSubscriptionPanel("UndoClick");
         else {
 
             // TODO: Turn off hint.
@@ -312,12 +324,19 @@ public class UIBehaviours : Singleton < UIBehaviours > {
         {
             return;
         }
-        //fix
-        if (!IAPManager.vip) IAPManager.instance.ShowSubscriptionPanel("HintClick");
+        //point
+        bool flag = IAPManager.vip;
+#if UNITY_ANDROID
+        flag = true;
+#endif
+        if (!flag) IAPManager.instance.ShowSubscriptionPanel("HintClick");
         else
             // TODO: Check the hint.
             GamePlay.Instance.IsHintAvailable();
-	}
+
+        //fix text
+        //GamePlay.Instance.autoWin();
+    }
 
 	#endregion
 }

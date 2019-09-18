@@ -123,8 +123,10 @@ namespace KLONDIKE
 		/// Init this instance.
 		/// </summary>
 		protected void Init()
-		{  
-			// TODO: Create the default list will get the cards.
+		{
+
+            Debug.Log("Klondike init");
+            // TODO: Create the default list will get the cards.
 			List < CardBehaviour > paramGet = new List<CardBehaviour>();
 
 			// TODO: Check the current of mode.
@@ -367,8 +369,13 @@ namespace KLONDIKE
 			// TODO: waiting time.
 			yield return Timing.WaitForSeconds (0.5f);
 
-			// TODO: showing the dialog.
-			DialogSystem.Instance.ShowDialogNewGame ();
+            // TODO: showing the dialog.
+
+            Debug.Log(GameManager.Instance.GetModeGame());
+            if (GameManager.Instance.GetModeGame() == Enums.ModeGame.None) DialogSystem.Instance.ShowDialogNewGame();
+            else DialogNewGame.updateMode(GameManager.Instance.GetModeGame());
+
+
 
 			// TODO: waiting.
 			while (GameManager.Instance.GetStateGame () != Enums.StateGame.Start)
@@ -427,7 +434,7 @@ namespace KLONDIKE
 
 				// TODO: Check if this card is null.
 				if (cardCache == null) {
-
+                    
 					// TODO: Throw the exception and stop the game.
 					throw new UnityException (Contains.NullExceptions);
 				}

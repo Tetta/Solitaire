@@ -34,7 +34,7 @@ public class AnalyticsController : MonoBehaviour {
         }
         /*
         if (PlayerPrefs.GetInt("USER_GROUP", -1) == -1) {
-            //point start 1
+ 
             //group = 30%, other random 2-9
             int r;
             List<int> l = new List<int> { 1, 2, 4, 5, 6, 7 };

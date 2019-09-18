@@ -182,9 +182,9 @@ namespace TRIPEAKS
 					Contains.Score += Contains.ScoreResultCards;
 
 					// TODO: Update the display score.
-					UIBehaviours.Instance.UpdateScore ();	
-
-					if ( GamePlay.Instance.IsConditionWining ())
+					UIBehaviours.Instance.UpdateScore ();
+                    //GamePlay.Instance.checkAutoWin();
+                    if ( GamePlay.Instance.IsConditionWining ())
 					{
 						// TODO: Update the state of GameOver.
 						GameManager.Instance.UpdateState(Enums.StateGame.GameOver);

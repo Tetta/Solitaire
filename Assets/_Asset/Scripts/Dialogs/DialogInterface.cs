@@ -47,7 +47,8 @@ public class DialogInterface : MonoBehaviour {
 
     public virtual void Show()
     {
-		if (dialogState == Enums.DialogState.Appear)
+
+        if (dialogState == Enums.DialogState.Appear)
 			return;
 		
 		dialogState = Enums.DialogState.Appear;

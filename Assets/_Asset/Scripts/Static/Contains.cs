@@ -596,7 +596,8 @@ public static class PlayerData
 	/// </summary>
 	public static void Save()
 	{
-		// TODO: Parse data to json.
+        Debug.Log("--- Save ---");
+        // TODO: Parse data to json.
 		var stringSaveEasy = JsonUtility.ToJson (playerPropertiesEasy);
 
 		// TODO: Parse data to json.
@@ -637,7 +638,8 @@ public static class PlayerData
 	/// </summary>
 	public static void Load()
 	{
-		var stringGetEasy = PlayerValueEasy;
+        Debug.Log("--- Load ---");
+        var stringGetEasy = PlayerValueEasy;
 
 		var stringGetMedium = PlayerValueMedium;
 
@@ -675,16 +677,23 @@ public static class PlayerData
 			// TODO: Get the properties.
 			playerPropertiesHard = JsonUtility.FromJson<PlayerProperties> (stringGetHard);
 		}
+        
 
-		LogGame.DebugLog ("LOADING...");
+        LogGame.DebugLog ("LOADING...");
 	}
 		
 	private static string PlayerValueEasy{
-		get { 
-			return PlayerPrefs.GetString (string.Format ("{0}-{1}",Enums._GameScene[(int)GameManager.Instance.GameType], "Player-Datas-Easy"), string.Empty);		
+		get {
+            Debug.Log("--- GET ---");
+            Debug.Log(string.Format("{0}-{1}", Enums._GameScene[(int)GameManager.Instance.GameType], "Player-Datas-Easy"));
+            Debug.Log(PlayerPrefs.GetString(string.Format("{0}-{1}", Enums._GameScene[(int)GameManager.Instance.GameType], "Player-Datas-Easy"), string.Empty));
+            return PlayerPrefs.GetString (string.Format ("{0}-{1}",Enums._GameScene[(int)GameManager.Instance.GameType], "Player-Datas-Easy"), string.Empty);		
 		}
-		set { 
-			PlayerPrefs.SetString (string.Format ("{0}-{1}",Enums._GameScene[(int)GameManager.Instance.GameType],"Player-Datas-Easy"), value);
+		set {
+            Debug.Log("--- SET ---");
+            Debug.Log(string.Format("{0}-{1}", Enums._GameScene[(int)GameManager.Instance.GameType], "Player-Datas-Easy"));
+            Debug.Log(value);
+            PlayerPrefs.SetString (string.Format ("{0}-{1}",Enums._GameScene[(int)GameManager.Instance.GameType],"Player-Datas-Easy"), value);
 		}
 	}
 

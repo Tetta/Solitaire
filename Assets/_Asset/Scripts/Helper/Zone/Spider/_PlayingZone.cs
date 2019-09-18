@@ -288,9 +288,9 @@ namespace SPIDER
 				// TODO: Doing the action.
 				OnComplete();
 			}
-
-			// TODO: Check the state of game.
-			if ( GamePlay.Instance.IsConditionWining ())
+            //GamePlay.Instance.checkAutoWin();
+            // TODO: Check the state of game.
+            if ( GamePlay.Instance.IsConditionWining ())
 			{
 
 				// TODO: Update the state of GameOver.

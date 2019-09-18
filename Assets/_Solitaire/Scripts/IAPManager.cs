@@ -60,8 +60,12 @@ public class IAPManager : MonoBehaviour
     //public void purchase
 
     public void ShowSubscriptionPanel(string from) {
+#if UNITY_ANDROID
+        return ;
+#endif
         AnalyticsController.subscriptionFrom = from;
-        if(!vip) subscribeCanvas.SetActive(true);
+
+        if (!vip) subscribeCanvas.SetActive(true);
     }
     public void HideSubscriptionPanel() {
         subscribeCanvas.SetActive(false);

@@ -63,7 +63,8 @@ public class LoadingBehaviour : Singleton < LoadingBehaviour > {
 	/// <param name="isUseSplashScreen">If set to <c>true</c> is use splash screen.</param>
 	private IEnumerator < float > LoadingTime(string sceneLoad , bool isFade , bool isUseSplashScreen )
 	{
-
+        //fix
+        if (!isFade && isUseSplashScreen) transform.gameObject.SetActive(false);
         if (isUseSplashScreen)
         {
 
@@ -110,8 +111,8 @@ public class LoadingBehaviour : Singleton < LoadingBehaviour > {
 			canvasGroup.alpha = 1;	
 
 			if (isFade) {
-
-				float distance = Mathf.Clamp (3f - (Time.time - timeLoading), 0f, 3f);					
+                //fix
+				float distance = Mathf.Clamp (1f - (Time.time - timeLoading), 0f, 1f);					
 
 				yield return Timing.WaitForSeconds (distance);
 

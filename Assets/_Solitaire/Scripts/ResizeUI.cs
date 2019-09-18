@@ -71,7 +71,7 @@ public class ResizeUI : MonoBehaviour
 
 
 
-        Debug.Log("scale " + scale);
+        //Debug.Log("scale " + scale);
 
         //if (d > 0.4618f && d < 1) {
         // d = d - 0.4618f;
@@ -107,7 +107,7 @@ public class ResizeUI : MonoBehaviour
 
         //resultCanvas.transform.parent.scal
             Camera.main.transform.localPosition = new Vector3(-251, -157 + (1 - scale) * 10f);
-            Debug.Log("cam pos " + new Vector3(-251, -157 + (1 - scale) * 10f));
+            //Debug.Log("cam pos " + new Vector3(-251, -157 + (1 - scale) * 10f));
         //}
 
 

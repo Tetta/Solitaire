@@ -247,9 +247,9 @@ namespace KLONDIKE
 
 			if (isReadyToJoin == false) {
 				lastCard = HintZone.Instance.GetTheLastCard (Enums.IdTransformCard.TransformCards_A);
-
+                
 				// TODO: Get the default position.
-				positionTarget = lastCard.TargetPosition;
+				if (lastCard != null) positionTarget = lastCard.TargetPosition;
 			}
 
 			// TODO: Check null.

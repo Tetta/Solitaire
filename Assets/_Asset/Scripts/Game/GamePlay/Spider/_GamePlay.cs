@@ -142,7 +142,7 @@ namespace SPIDER
 
 					// TODO: Get the cards from the pool.
 					paramGet.AddRange (PoolSystem.Instance.GetCardsColor (type));
-
+                        
 					// TODO: Check the number of cards from list. 
 					if (paramGet.Count > 0) {
 
@@ -191,6 +191,7 @@ namespace SPIDER
 
 					// TODO: Clear the old of cards in the list.
 					paramGet.Clear ();
+
 
 					// TODO: Get the cards from the pool.
 					paramGet.AddRange (PoolSystem.Instance.GetCardsColor (type_Black));
@@ -381,11 +382,13 @@ namespace SPIDER
 			// TODO: waiting time.
 			yield return Timing.WaitForSeconds (0.5f);
 
-			// TODO: showing the dialog.
-			DialogSystem.Instance.ShowDialogNewGame ();
+            // TODO: showing the dialog.
+            Debug.Log(GameManager.Instance.GetModeGame());
+            if (GameManager.Instance.GetModeGame() == Enums.ModeGame.None) DialogSystem.Instance.ShowDialogNewGame();
+            else DialogNewGame.updateMode(GameManager.Instance.GetModeGame());
 
-			// TODO: waiting.
-			while (GameManager.Instance.GetStateGame () != Enums.StateGame.Start)
+            // TODO: waiting.
+            while (GameManager.Instance.GetStateGame () != Enums.StateGame.Start)
 				yield return 0f;
 
 			// TODO: Init the functions

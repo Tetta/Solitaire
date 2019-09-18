@@ -3,8 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class UIMenus : MonoBehaviour {
+    public static UIMenus instance;
+    private void Awake() {
+        if (instance == null) {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
 
-	void OnEnable()
+        }
+    }
+    private void Start() {
+        OpenKlondikes();
+    }
+
+    void OnEnable()
 	{
 		SoundSystems.Instance.PlayerMusic(((Enums.MusicIndex)(Random.Range((int)Enums.MusicIndex.Background_I, (int)Enums.MusicIndex.Background_III + 1))) , true);
 	}
@@ -24,7 +35,11 @@ public class UIMenus : MonoBehaviour {
 
     public void OpenSpider() {
         //point
-        if (!IAPManager.vip) IAPManager.instance.ShowSubscriptionPanel("OpenSpider");
+        bool flag = IAPManager.vip;
+#if UNITY_ANDROID
+        flag = true;
+#endif
+        if (!flag) IAPManager.instance.ShowSubscriptionPanel("OpenSpider");
         else {
         GameManager.Instance.GameType = Enums.GameScenes.Spider;
 
@@ -41,7 +56,11 @@ public class UIMenus : MonoBehaviour {
 	public void OpenTripeaks()
 	{
         //point
-        if (!IAPManager.vip) IAPManager.instance.ShowSubscriptionPanel("OpenTripeaks");
+        bool flag = IAPManager.vip;
+#if UNITY_ANDROID
+        flag = true;
+#endif
+        if (!flag) IAPManager.instance.ShowSubscriptionPanel("OpenTripeaks");
         else {
             GameManager.Instance.GameType = Enums.GameScenes.Tripeaks;
 

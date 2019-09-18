@@ -67,7 +67,7 @@ public class GameController : MonoBehaviour {
 
     void awakeScene() {
         logTime("Awake");
-        //fix uncomment
+
         LevelController.level = PlayerPrefs.GetInt("LEVEL", 1);
         LevelController.level = 25;
 
@@ -92,9 +92,9 @@ public class GameController : MonoBehaviour {
         levelText.text = "LEVEL " + LevelController.level;
         newLevelsText.gameObject.SetActive(LevelController.level >= maxLevels);
         //gift wheel
-        //point 4 * 60 * 60
+ 
         TimerManager.timers["gift"] = new Timer("gift", 4 * 60 * 60, updateGiftButton);
-        //point 45
+    
         if (!TimerManager.timers.ContainsKey("gameoverOffer")) TimerManager.timers["gameoverOffer"] = new Timer("gameoverOffer", 45, null);
 
         //first launch
@@ -111,7 +111,7 @@ public class GameController : MonoBehaviour {
         if ((AnalyticsController.awake && PlayerPrefs.GetInt("SESSIONS_COUNT", 0) >= 2 || 
             PlayerPrefs.GetInt("USER_GROUP_GAMEOVER_OFFER", 1) == 3 && isPrevGameOver && !TimerManager.timers["gameoverOffer"].enable) 
             && !IAPManager.vip) {
-            //fix uncomment
+ 
             if (!GameController.lion) showScreen("VipUI");
             logSubscriptionShown("Start");
             TimerManager.timers["gameoverOffer"].init(true);

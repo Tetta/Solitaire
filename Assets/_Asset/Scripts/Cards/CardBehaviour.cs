@@ -29,7 +29,7 @@ public class CardBehaviour : MonoBehaviour , IDragHandler , IBeginDragHandler , 
 	/// <summary>
 	/// The card unlocked?
 	/// </summary>
-	protected bool isUnlock;
+	public bool isUnlock;
 
 	[HideInInspector]
 	/// <summary>
@@ -289,13 +289,15 @@ public class CardBehaviour : MonoBehaviour , IDragHandler , IBeginDragHandler , 
 	/// <param name="eventData">Event data.</param>
 	public void OnEndDrag (PointerEventData eventData)
 	{
-		// TODO: if the state of this card is not ready. break the functions.
-		if (!IsReady ())
+        
+        // TODO: if the state of this card is not ready. break the functions.
+        if (!IsReady ())
 			return;
 
-		// TODO: Doing something.
 
-		switch (GameManager.Instance.GameType) {
+        // TODO: Doing something.
+
+        switch (GameManager.Instance.GameType) {
 			
 		case Enums.GameScenes.Spider:
 
@@ -310,7 +312,9 @@ public class CardBehaviour : MonoBehaviour , IDragHandler , IBeginDragHandler , 
 			_KCardBehaviour.OnTouchEndDrag ();
 			break;
 		}
-	}
+
+        GamePlay.Instance.checkAutoWin();
+    }
 
 	/// <summary>
 	/// Raises the pointer click event.
@@ -318,57 +322,116 @@ public class CardBehaviour : MonoBehaviour , IDragHandler , IBeginDragHandler , 
 	/// <param name="eventData">Event data.</param>
 	public void OnPointerClick (PointerEventData eventData)
 	{
-  		// TODO: if the state of this card is not ready. break the functions.
-		if (!IsReady ())
-			return;
+        //Debug.Log("Card OnPointerClick");
+        // TODO: if the state of this card is not ready. break the functions.
+        if (!IsReady())
+            return;
+        
 
-		// TODO: Turn off hint.
-		HintDisplay.Instance.DisableHint();
+        // TODO: Turn off hint.
+        HintDisplay.Instance.DisableHint();
 
-		// TODO: Check if the card is using.
-		if (stateTouched != Enums.StateTouch.None) {
+        // TODO: Check if the card is using.
+        if (stateTouched != Enums.StateTouch.None) {
 
-			// TODO: Break the function.
-			return;
-		}
+            // TODO: Break the function.
+            return;
+        }
 
-		SoundSystems.Instance.PlaySound(Enums.SoundIndex.Press);
+        SoundSystems.Instance.PlaySound(Enums.SoundIndex.Press);
 
-		// TODO: update the number of move.
-		UIBehaviours.Instance.UpdateMove(1, true);
+        // TODO: update the number of move.
+        UIBehaviours.Instance.UpdateMove(1, true);
 
-		// TODO: Set the state of touch.
-		stateTouched = Enums.StateTouch.Touch;
+        // TODO: Set the state of touch.
+        stateTouched = Enums.StateTouch.Touch;
 
-		// TODO: Set Up the information before following.
-		BeginFollow ();
+        // TODO: Set Up the information before following.
+        BeginFollow();
+        GamePlay.Instance.checkAutoWin();
+        // TODO: Check the Playing zone.
+        if (DoCheckPlayingZone(false)) {
 
-		// TODO: Check the Playing zone.
-		if (DoCheckPlayingZone ( false )) {
+            // TODO: Reset the state of touching.
+            stateTouched = Enums.StateTouch.None;
 
-			// TODO: Reset the state of touching.
-			stateTouched = Enums.StateTouch.None;
-
-			// TODO: Break the functions.
-			return;
-		}
+            // TODO: Break the functions.
+            return;
+        }
 
         // TODO: Reset the state of touching.
         stateTouched = Enums.StateTouch.None;
         //Debug.Log("--TargetPosition: " + TargetPosition);
         //Debug.Log("--pos: " + transform.position);
         // TODO: Back to the current position.
-        Moving (TargetPosition, parentTransform , ()=>{
 
-			// TODO: Distribute the follow cards.
-			DistributeTheFollowCards();
+        Moving(TargetPosition, parentTransform, () => {
 
-			// TODO: Failed Collect;
-			AnimationFailedCollect();
+            // TODO: Distribute the follow cards.
+            DistributeTheFollowCards();
 
-		});     
-	}
+            // TODO: Failed Collect;
+            AnimationFailedCollect();
 
+            
+        });
+
+
+    }
+
+    public void cardClick () {
+        // TODO: if the state of this card is not ready. break the functions.
+        if (!IsReady()) {
+            EventSystem.Instance.DrawHintCards();
+            return;
+        }
+
+        // TODO: Turn off hint.
+        HintDisplay.Instance.DisableHint();
+
+        // TODO: Check if the card is using.
+        if (stateTouched != Enums.StateTouch.None) {
+
+            // TODO: Break the function.
+            return;
+        }
+
+        SoundSystems.Instance.PlaySound(Enums.SoundIndex.Press);
+
+        // TODO: update the number of move.
+        UIBehaviours.Instance.UpdateMove(1, true);
+
+        // TODO: Set the state of touch.
+        stateTouched = Enums.StateTouch.Touch;
+
+        // TODO: Set Up the information before following.
+        BeginFollow();
+
+        // TODO: Check the Playing zone.
+        if (DoCheckPlayingZone(false)) {
+
+            // TODO: Reset the state of touching.
+            stateTouched = Enums.StateTouch.None;
+
+            // TODO: Break the functions.
+            return;
+        }
+
+        // TODO: Reset the state of touching.
+        stateTouched = Enums.StateTouch.None;
+        //Debug.Log("--TargetPosition: " + TargetPosition);
+        //Debug.Log("--pos: " + transform.position);
+        // TODO: Back to the current position.
+        Moving(TargetPosition, parentTransform, () => {
+
+            // TODO: Distribute the follow cards.
+            DistributeTheFollowCards();
+
+            // TODO: Failed Collect;
+            AnimationFailedCollect();
+
+        });
+    }
 	#endregion
 
 	#region Helper
@@ -659,42 +722,35 @@ public class CardBehaviour : MonoBehaviour , IDragHandler , IBeginDragHandler , 
 
 			// TODO: Scale the image to zero.
 			TUIRenderer.DOScale (new Vector3 (0, 1.1f, 0), Contains.DurationFade / 2).OnComplete (() => {
-                Debug.Log(1);
-                Debug.Log(UIRenderer.transform.localScale);
+
                 // TODO: Scale the image to one.
                 TUIRenderer.DOScale ( new Vector3 ( 1, 1, 1 ) , Contains.DurationFade / 2 ).OnStart ( ()=> {
-                    Debug.Log(2);
-                    Debug.Log(UIRenderer.transform.localScale);
+
                     // TODO: Check the state of unlock.
                     if ( IsUnlocking )
 					{
-                        Debug.Log(3);
-                        Debug.Log(UIRenderer.transform.localScale);
+
                         // TODO: Set the sprite unlocked.
                         UIRenderer.sprite = properties.GetCardSprite ();
 
 					}else{
 
-                        Debug.Log(4);
-                        Debug.Log(UIRenderer.transform.localScale);
                         // TODO: Set the sprite locked.
                         UIRenderer.sprite = DataSystem.Instance.GetDefaultCard(Contains.GetThemeType);
 					}
 				}).OnComplete ( ()=>
 					{
-                        Debug.Log(5);
-                        Debug.Log(UIRenderer.transform.localScale);
+
                         //UIRenderer.transform.localScale = new Vector3(1, 1, 1);
                         // TODO: Check if the callback does not null.
                         if ( OnCompleted != null )
 						{
-                            Debug.Log(6);
-                            
-                            Debug.Log(UIRenderer.transform.localScale);
+
                             // TODO: Run the callback.
                             OnCompleted();
 						}
-					});			
+                        GamePlay.Instance.checkAutoWin();
+                    });			
 			});				
 
 			// TODO: Break the functions.
@@ -727,6 +783,7 @@ public class CardBehaviour : MonoBehaviour , IDragHandler , IBeginDragHandler , 
 			// TODO: Run the callback.
 			OnCompleted ();
 		}
+
 	}
 
 	/// <summary>

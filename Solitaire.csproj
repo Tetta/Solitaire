@@ -33,7 +33,7 @@
     <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_3_14;UNITY_2018_3;UNITY_2018;UNITY_INCLUDE_TESTS;UNITY_PURCHASING;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_EVENT_QUEUE;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_AR;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;ENABLE_RUNTIME_PERMISSIONS;UNITY_ASTC_ONLY_DECOMPRESS;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE;CROSS_PLATFORM_INPUT;MOBILE_INPUT;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_3_14;UNITY_2018_3;UNITY_2018;UNITY_INCLUDE_TESTS;UNITY_PURCHASING;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_EVENT_QUEUE;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_AR;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;ENABLE_RUNTIME_PERMISSIONS;UNITY_ASTC_ONLY_DECOMPRESS;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -43,7 +43,7 @@
     <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_3_14;UNITY_2018_3;UNITY_2018;UNITY_INCLUDE_TESTS;UNITY_PURCHASING;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_EVENT_QUEUE;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_AR;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;ENABLE_RUNTIME_PERMISSIONS;UNITY_ASTC_ONLY_DECOMPRESS;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE;CROSS_PLATFORM_INPUT;MOBILE_INPUT;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_3_14;UNITY_2018_3;UNITY_2018;UNITY_INCLUDE_TESTS;UNITY_PURCHASING;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_EVENT_QUEUE;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_AR;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;ENABLE_RUNTIME_PERMISSIONS;UNITY_ASTC_ONLY_DECOMPRESS;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
@@ -245,18 +245,6 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.14f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
-    <Reference Include="DOTween">
-      <HintPath>Assets/DOTween/DOTween.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTween43">
-      <HintPath>Assets/DOTween/DOTween43.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTween46">
-      <HintPath>Assets/DOTween/DOTween46.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTween50">
-      <HintPath>Assets/DOTween/DOTween50.dll</HintPath>
-    </Reference>
     <Reference Include="Facebook.Unity">
       <HintPath>Assets/FacebookSDK/Plugins/Facebook.Unity.dll</HintPath>
     </Reference>
@@ -268,6 +256,15 @@
     </Reference>
     <Reference Include="Facebook.Unity.Settings">
       <HintPath>Assets/FacebookSDK/Plugins/Settings/Facebook.Unity.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="UDP">
+      <HintPath>Assets/Plugins/UDP/UDP.dll</HintPath>
+    </Reference>
+    <Reference Include="ChannelPurchase">
+      <HintPath>Assets/Plugins/UnityChannel/ChannelPurchase.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityStore">
+      <HintPath>Assets/Plugins/UnityChannel/UnityStore.dll</HintPath>
     </Reference>
     <Reference Include="Editor">
       <HintPath>Assets/Plugins/UnityPurchasing/Bin/Editor.dll</HintPath>
@@ -292,6 +289,18 @@
     </Reference>
     <Reference Include="winrt">
       <HintPath>Assets/Plugins/UnityPurchasing/winrt/winrt.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>Assets/_Asset/ThirdParty/Demigiant/DOTween/DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween43">
+      <HintPath>Assets/_Asset/ThirdParty/Demigiant/DOTween/DOTween43.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween46">
+      <HintPath>Assets/_Asset/ThirdParty/Demigiant/DOTween/DOTween46.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween50">
+      <HintPath>Assets/_Asset/ThirdParty/Demigiant/DOTween/DOTween50.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>D:/Projects/Solitaire/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
@@ -684,6 +693,147 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\_Asset\Scripts\Ads Network\AdSystem.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Background\BackgroundBehaviours.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Cards\CardBehaviour.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Cards\CardBehaviours\Klondike\_CardBehaviour.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Cards\CardBehaviours\Spider\_CardBehaviour.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Cards\CardBehaviours\Tripeaks\_CardBehaviour.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Cards\CardDataProperties.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Datas\DataSystem.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Dialogs\Dialog Base\DialogMessage.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Dialogs\Dialog Base\DialogNewGame.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Dialogs\Dialog Base\DialogSettings.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Dialogs\Dialog Base\DialogWining.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Dialogs\DialogInterface.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Dialogs\DialogSystem.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Effect\Blur.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Effect\TScoreDisplay.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Events\EventSystem.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Events\UndoSystem.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Game\GameInit.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Game\GameManager.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Game\GamePlay.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Game\GamePlay\Klondike\_GamePlay.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Game\GamePlay\Spider\_GamePlay.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Game\GamePlay\Tripeaks\_GamePlay.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Game\RegisterSystem.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Game\UpdateSystem.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Helper\HelperZone.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Helper\HintDisplay.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Helper\HintZone.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Helper\PlayingZone.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Helper\ResultZone.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Helper\Zone.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Helper\Zone\Klondike\_HintZone.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Helper\Zone\Klondike\_PlayingZone.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Helper\Zone\Spider\_HintZone.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Helper\Zone\Spider\_PlayingZone.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Helper\Zone\Tripeaks\_HintZone.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Helper\Zone\Tripeaks\_PlayingZone.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Hud\TimerBehaviours.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Hud\UIBehaviours.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Hud\UIMenus.cs" />
+    <Compile Include="Assets\_Asset\Scripts\IAP\IapManager.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Interface\Singleton.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Loading\LoadingBehaviour.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Pool Manager\PoolSystem.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Pool Manager\ReturnToPools.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Sounds\SoundHelper.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Sounds\SoundRegister.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Sounds\SoundSystems.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Static\Contains.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Static\Enums.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Static\Helper.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Static\LogGame.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Tools\DisableOnEnable.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Tools\ParticlesSoundsPlay.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Tools\RandomOnEnable.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Tools\RotationOnEnable.cs" />
+    <Compile Include="Assets\_Asset\Scripts\Tools\StringFast.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\Animation.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\AnimationState.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\AnimationStateData.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\Atlas.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\Attachments\AtlasAttachmentLoader.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\Attachments\Attachment.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\Attachments\AttachmentLoader.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\Attachments\AttachmentType.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\Attachments\BoundingBoxAttachment.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\Attachments\ClippingAttachment.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\Attachments\MeshAttachment.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\Attachments\PathAttachment.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\Attachments\PointAttachment.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\Attachments\RegionAttachment.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\Attachments\VertexAttachment.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\BlendMode.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\Bone.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\BoneData.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\Event.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\EventData.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\ExposedList.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\IConstraint.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\IkConstraint.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\IkConstraintData.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\IUpdatable.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\Json.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\MathUtils.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\PathConstraint.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\PathConstraintData.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\Skeleton.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\SkeletonBinary.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\SkeletonBounds.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\SkeletonClipping.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\SkeletonData.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\SkeletonJson.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\Skin.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\Slot.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\SlotData.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\TransformConstraint.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\TransformConstraintData.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-csharp\Triangulator.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\Asset Types\AtlasAsset.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\Asset Types\SkeletonDataAsset.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\BoneFollower.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\ISkeletonAnimation.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\Mesh Generation\DoubleBuffered.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\Mesh Generation\SpineMesh.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\Mesh Generation\Unused\ArraysMeshGenerator.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\Mesh Generation\Unused\ArraysSimpleMeshGenerator.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\Mesh Generation\Unused\ArraysSubmeshedMeshGenerator.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\Mesh Generation\Unused\ArraysSubmeshSetMeshGenerator.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\Mesh Generation\Unused\DoubleBufferedMesh.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\Mesh Generation\Unused\ISimpleMeshGenerator.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\Mesh Generation\Unused\ISubmeshedMeshGenerator.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\Modules\AttachmentTools\AttachmentTools.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\Modules\BoundingBoxFollower\BoundingBoxFollower.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\Modules\CustomMaterials\SkeletonRendererCustomMaterials.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\Modules\Ghost\SkeletonGhost.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\Modules\Ghost\SkeletonGhostRenderer.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\Modules\Ragdoll\SkeletonRagdoll.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\Modules\Ragdoll\SkeletonRagdoll2D.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\Modules\SkeletonGraphic\BoneFollowerGraphic.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\Modules\SkeletonGraphic\SkeletonGraphic.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\Modules\SkeletonRenderSeparator\SkeletonPartsRenderer.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\Modules\SkeletonRenderSeparator\SkeletonRenderSeparator.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\Modules\SkeletonUtility Modules\SkeletonUtilityEyeConstraint.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\Modules\SkeletonUtility Modules\SkeletonUtilityGroundConstraint.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\Modules\SkeletonUtility Modules\SkeletonUtilityKinematicShadow.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\Modules\SlotBlendModes\SlotBlendModes.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\Modules\TK2D\SpriteCollectionAttachmentLoader.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\Modules\YieldInstructions\WaitForSpineAnimationComplete.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\Modules\YieldInstructions\WaitForSpineEvent.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\Modules\YieldInstructions\WaitForSpineTrackEntryEnd.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\SkeletonAnimation.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\SkeletonAnimator.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\SkeletonExtensions.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\SkeletonRenderer.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\SkeletonUtility\SkeletonUtility.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\SkeletonUtility\SkeletonUtilityBone.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\SkeletonUtility\SkeletonUtilityConstraint.cs" />
+    <Compile Include="Assets\_Asset\Spine\spine-unity\SpineAttributes.cs" />
+    <Compile Include="Assets\_Asset\ThirdParty\Demigiant\DOTween\Examples\Basics.cs" />
+    <Compile Include="Assets\_Asset\ThirdParty\Demigiant\DOTween\Examples\Sequences.cs" />
     <Compile Include="Assets\_Solitaire\Scripts\AdController.cs" />
     <Compile Include="Assets\_Solitaire\Scripts\AnalyticsController.cs" />
     <Compile Include="Assets\_Solitaire\Scripts\AudioManager.cs" />
@@ -691,7 +841,8 @@
     <Compile Include="Assets\_Solitaire\Scripts\Gradient2.cs" />
     <Compile Include="Assets\_Solitaire\Scripts\IAPManager.cs" />
     <Compile Include="Assets\_Solitaire\Scripts\Purchaser.cs" />
-    <Compile Include="Assets\_Solitaire\Scripts\Singleton.cs" />
+    <Compile Include="Assets\_Solitaire\Scripts\ResizeUI.cs" />
+    <Compile Include="Assets\_Solitaire\Scripts\SubscriptionCanvas.cs" />
     <Compile Include="Assets\_Solitaire\Scripts\Tools.cs" />
     <Compile Include="Assets\BuildReport\Scripts\FuzzyString\ApproximatelyEquals.cs" />
     <Compile Include="Assets\BuildReport\Scripts\FuzzyString\FuzzyStringComparisonOptions.cs" />
@@ -749,28 +900,67 @@
     <None Include="Assets\BuildReport\README.txt" />
     <None Include="Assets\BuildReport\Scripts\FuzzyString\License.txt" />
     <None Include="Assets\BuildReport\VERSION.txt" />
-    <None Include="Assets\DOTween\DOTween.XML" />
-    <None Include="Assets\DOTween\DOTween43.xml" />
-    <None Include="Assets\DOTween\DOTween46.xml" />
-    <None Include="Assets\DOTween\DOTween50.xml" />
-    <None Include="Assets\DOTween\Editor\DOTweenEditor.XML" />
-    <None Include="Assets\DOTween\readme.txt" />
+    <None Include="Assets\Editor\Beebyte\Obfuscator_README.txt" />
     <None Include="Assets\FacebookSDK\Plugins\Editor\Dependencies.xml" />
     <None Include="Assets\FacebookSDK\link.xml" />
     <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.95.0.txt" />
+    <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
     <None Include="Assets\Plugins\Android\IronSource\AndroidManifest.xml" />
     <None Include="Assets\Plugins\UnityPurchasing\Editor\IAPGeneratedCredentials.cs.template" />
     <None Include="Assets\Plugins\UnityPurchasing\script\link.xml" />
+    <None Include="Assets\_Asset\AssetsBundle\Spine\Biker\biker.atlas.txt" />
+    <None Include="Assets\_Asset\Scripts\Effect\BlurEffectConeTaps.shader" />
+    <None Include="Assets\_Asset\Shaders\UIOptimize\FastUIShader.shader" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Editor\Resources\SpineAssetDatabaseMarker.txt" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Modules\CustomMaterials\SkeletonRendererCustomMaterials.txt" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Modules\Ghost\Shaders\Spine-Special-Skeleton-Ghost.shader" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Modules\Shaders\Spine-Skeleton-Fill.shader" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Modules\Shaders\Spine-Skeleton-Tint.shader" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\ShaderMaths.cginc" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\ShaderShared.cginc" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteLighting.cginc" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpritePixelLighting.cginc" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteShadows.cginc" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteSpecular.cginc" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteUnlit.cginc" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteVertexLighting.cginc" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Modules\Shaders\Sprite\CameraDepthNormalsTexture.shader" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Modules\Shaders\Sprite\CameraDepthTexture.shader" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Modules\Shaders\Sprite\CameraNormalsTexture.shader" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Modules\Shaders\Sprite\ShaderShared.cginc" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Modules\Shaders\Sprite\SpriteDepthNormalsTexture.shader" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Modules\Shaders\Sprite\SpriteLighting.cginc" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Modules\Shaders\Sprite\SpritePixelLighting.cginc" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Modules\Shaders\Sprite\SpriteShadows.cginc" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Modules\Shaders\Sprite\SpriteUnlit.cginc" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Modules\Shaders\Sprite\SpriteVertexLighting.cginc" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Modules\Shaders\Sprite\SpritesPixelLit.shader" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Modules\Shaders\Sprite\SpritesUnlit.shader" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Modules\Shaders\Sprite\SpritesVertexLit.shader" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Modules\SkeletonGraphic\Shaders\Spine-SkeletonGraphic-TintBlack.shader" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Modules\SkeletonGraphic\Shaders\Spine-SkeletonGraphic.shader" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Modules\SkeletonRenderSeparator\SkeletonRenderSeparator.txt" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Modules\SlotBlendModes\Spine-Skeleton-PMA-Multiply.shader" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Modules\SlotBlendModes\Spine-Skeleton-PMA-Screen.shader" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Shaders\Spine-Skeleton-TintBlack.shader" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Shaders\Spine-Skeleton.shader" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Shaders\Spine-SkeletonLit.shader" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Shaders\Utility\Hidden-Spine-Bones.shader" />
+    <None Include="Assets\_Asset\Spine\spine-unity\Shaders\Utility\HiddenPass.shader" />
+    <None Include="Assets\_Asset\Spine\spine-unity\version.txt" />
+    <None Include="Assets\_Asset\ThirdParty\Demigiant\DOTween\DOTween.XML" />
+    <None Include="Assets\_Asset\ThirdParty\Demigiant\DOTween\DOTween43.xml" />
+    <None Include="Assets\_Asset\ThirdParty\Demigiant\DOTween\DOTween46.xml" />
+    <None Include="Assets\_Asset\ThirdParty\Demigiant\DOTween\DOTween50.xml" />
+    <None Include="Assets\_Asset\ThirdParty\Demigiant\DOTween\Editor\DOTweenEditor.XML" />
+    <None Include="Assets\_Asset\ThirdParty\Demigiant\DOTween\readme.txt" />
+    <None Include="Assets\_Asset\codeandweb.com\Editor\SettingsTexturePackerImporter.txt" />
+    <None Include="Assets\_Asset\codeandweb.com\Readme.txt" />
     <None Include="Assets\_Solitaire\FX\2 Fire.shader" />
     <None Include="Assets\_Solitaire\Fonts\OFL.txt" />
-    <None Include="Packages\com.unity.analytics\DataPrivacy\Unity.Analytics.DataPrivacy.asmdef" />
-    <None Include="Packages\com.unity.analytics\Tests\Editor\Unity.Analytics.StandardEvents\Unity.Analytics.StandardEvents.EditorTests.asmdef" />
-    <None Include="Packages\com.unity.analytics\Tests\Runtime\DataPrivacy\Unity.Analytics.DataPrivacy.Tests.asmdef" />
     <None Include="Packages\com.unity.collab-proxy\Editor\Resources\Styles\CollabHistoryCommon.uss" />
     <None Include="Packages\com.unity.collab-proxy\Editor\Resources\Styles\CollabHistoryDark.uss" />
     <None Include="Packages\com.unity.collab-proxy\Editor\Resources\Styles\CollabHistoryLight.uss" />
-    <None Include="Packages\com.unity.collab-proxy\Editor\Unity.CollabProxy.Editor.asmdef" />
-    <None Include="Packages\com.unity.collab-proxy\Tests\Editor\Unity.CollabProxy.EditorTests.asmdef" />
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Styles\Main_Dark.uss" />
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Styles\Main_Light.uss" />
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Templates\Alert.uxml" />
@@ -783,12 +973,6 @@
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Templates\PackageManagerWindow.uxml" />
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Templates\PackageSearchToolbar.uxml" />
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Templates\PackageStatusBar.uxml" />
-    <None Include="Packages\com.unity.package-manager-ui\Editor\Unity.PackageManagerUI.Editor.asmdef" />
-    <None Include="Packages\com.unity.package-manager-ui\Tests\Editor\Unity.PackageManagerUI.EditorTests.asmdef" />
-    <None Include="Packages\com.unity.textmeshpro\Scripts\Editor\Unity.TextMeshPro.Editor.asmdef" />
-    <None Include="Packages\com.unity.textmeshpro\Scripts\Runtime\Unity.TextMeshPro.asmdef" />
-    <None Include="Packages\com.unity.textmeshpro\Tests\Editor\Unity.TextMeshPro.Editor.Tests.asmdef" />
-    <None Include="Packages\com.unity.textmeshpro\Tests\Runtime\Unity.TextMeshPro.Tests.asmdef" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

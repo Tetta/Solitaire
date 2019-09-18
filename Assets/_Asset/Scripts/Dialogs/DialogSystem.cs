@@ -36,15 +36,19 @@ public class DialogSystem : Singleton < DialogSystem > {
     /// The prefab of dialog wining.
     /// </summary>
     [SerializeField] private DialogWining prefabDialogWining;
+    /// <summary>
+    /// The prefab dialog auto win.
+    /// </summary>
+    [SerializeField] private DialogAutoWin prefabDialogAutoWin;
     #endregion
 
 
-	#region properties
+    #region properties
 
-	/// <summary>
-	/// The dialog new game.
-	/// </summary>
-	protected DialogNewGame dialogNewGame;
+    /// <summary>
+    /// The dialog new game.
+    /// </summary>
+    protected DialogNewGame dialogNewGame;
 
 	/// <summary>
 	/// The dialog settings.
@@ -60,14 +64,18 @@ public class DialogSystem : Singleton < DialogSystem > {
     /// The cache of dialog wining.
     /// </summary>
     protected DialogWining dialogWining;
-	#endregion
+    /// <summary>
+    /// The cache of dialog wining.
+    /// </summary>
+    protected DialogAutoWin dialogAutoWin;
+    #endregion
 
     // ============================ Properties =========================== //
 
-	/// <summary>
-	/// Dos the show.
-	/// </summary>
-	/// <param name="dialog">Dialog.</param>
+    /// <summary>
+    /// Dos the show.
+    /// </summary>
+    /// <param name="dialog">Dialog.</param>
     protected void DoShow(DialogInterface dialog)
     {
         Timing.RunCoroutine(ShowDialog(dialog));
@@ -181,7 +189,8 @@ public class DialogSystem : Singleton < DialogSystem > {
 	/// </summary>
 	public void ShowDialogNewGame()
 	{
-		// TODO: Get the dialog.
+        Debug.Log("ShowDialogNewGame");
+        // TODO: Get the dialog.
 		var dialog = GetTheDialog < DialogNewGame > (prefabDialogNewGame, dialogNewGame);
 
 		// TODO: Check if this null.
@@ -241,8 +250,27 @@ public class DialogSystem : Singleton < DialogSystem > {
 		// TODO: Show the dialog.
 		DoShow ( dialog );
     }
+    /// <summary>
+    /// Show the dialog auto win.
+    /// </summary>
+    public void ShowDialogAutoWin() {
+        // TODO: Get the dialog.
+        var dialog = GetTheDialog<DialogAutoWin>(prefabDialogAutoWin, dialogAutoWin);
 
-	protected T GetTheDialog<T>(T prefabIn, T paramOut) where T : DialogInterface
+        // TODO: Check if this null.
+        if (object.ReferenceEquals(dialog, null)) {
+
+            // TODO: Break the functions.
+            return;
+        }
+
+        // TODO: set the default dialog.
+        dialogAutoWin = dialog;
+
+        // TODO: Show the dialog.
+        DoShow(dialog);
+    }
+    protected T GetTheDialog<T>(T prefabIn, T paramOut) where T : DialogInterface
 	{
 		// TODO: Check if this null.
 		if (object.ReferenceEquals (paramOut, null)) {

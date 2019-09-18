@@ -183,6 +183,7 @@ public class PoolSystem : Singleton < PoolSystem > {
 		}
 
 		//TODO: Check the number of paramReturn equal 13.
+        //Debug.Log("paramReturn " +paramReturn.Count);
 		if (paramReturn.Count > 12) {
 
 			// TODO: Loop and remove all cards.

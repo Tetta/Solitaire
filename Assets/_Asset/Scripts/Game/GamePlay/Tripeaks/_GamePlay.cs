@@ -383,11 +383,13 @@ namespace TRIPEAKS
 			// TODO: waiting time.
 			yield return Timing.WaitForSeconds (0.5f);
 
-			// TODO: showing the dialog.
-			DialogSystem.Instance.ShowDialogNewGame ();
+            // TODO: showing the dialog.
+            Debug.Log(GameManager.Instance.GetModeGame());
+            if (GameManager.Instance.GetModeGame() == Enums.ModeGame.None) DialogSystem.Instance.ShowDialogNewGame();
+            else DialogNewGame.updateMode(GameManager.Instance.GetModeGame());
 
-			// TODO: waiting.
-			while (GameManager.Instance.GetStateGame () != Enums.StateGame.Start)
+            // TODO: waiting.
+            while (GameManager.Instance.GetStateGame () != Enums.StateGame.Start)
 				yield return 0f;
 
 			// TODO: Init the functions

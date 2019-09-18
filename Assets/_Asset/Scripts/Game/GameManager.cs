@@ -52,7 +52,7 @@ public class GameManager : Singleton < GameManager > {
 		}
 
 		InitStart ();
-
+        Debug.Log("InitCards");
 		InitCards ();
 	}
 
@@ -81,7 +81,8 @@ public class GameManager : Singleton < GameManager > {
 
 	public void UpdateModeGame(Enums.ModeGame mode)
 	{
-		this.ModeGame = mode;
+        //Debug.Log("UpdateModeGame: " + mode);
+        this.ModeGame = mode;
 	}
 
 	#endregion
@@ -95,7 +96,8 @@ public class GameManager : Singleton < GameManager > {
 	/// </summary>
 	public void InitCards()
 	{
-		PoolSystem.Instance.ClearCards ();
+
+        PoolSystem.Instance.ClearCards ();
 
 		CardDataProperties[] cards =  DataSystem.Instance.GetCardsData ();
 
@@ -171,7 +173,10 @@ public class GameManager : Singleton < GameManager > {
 
 	public Enums.ModeGame GetModeGame()
 	{
-		return ModeGame;
+        //
+        //Debug.Log("GetModeGame: " + ModeGame);
+
+        return ModeGame;
 	}
 		
 	/// <summary>

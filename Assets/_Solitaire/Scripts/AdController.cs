@@ -9,7 +9,7 @@ public class AdController : MonoBehaviour {
     public static AdController instance = null;
 
     public readonly string IOS_APP_KEY = "9f5ad33d";
-    public readonly string ANDROID_APP_KEY = "51960c416717ce5e3d99a3404aabbf5b7a1beb8bdd42ddcd";
+    public readonly string ANDROID_APP_KEY = "a12b91dd";
 
 
 

@@ -107,6 +107,9 @@ public class DialogSettings : DialogInterface {
         DefaultToggle();
 
         if (IAPManager.vip) UIRemoveAds.gameObject.SetActive(false);
+#if UNITY_ANDROID
+        UIRemoveAds.gameObject.SetActive(false);
+#endif
 
         if ( Contains.IsHavingRemoveAd )
         {
@@ -169,7 +172,7 @@ public class DialogSettings : DialogInterface {
 		}
 
         // TODO: Set the value of best score.
-		UIBestScoreValue.text = PlayerData.BestScore.ToString();
+        UIBestScoreValue.text = PlayerData.BestScore.ToString();
 
         // TODO: Set the value will be displayed on the best move.
 		UIBestMoveValues.text = PlayerData.BestMove.ToString ();

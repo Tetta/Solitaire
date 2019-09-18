@@ -14,7 +14,7 @@ public class TimerBehaviours : MonoBehaviour {
 	protected bool IsCountTime = false;
 
 	// TODO: Handle the time.
-	protected CoroutineHandle handleCountTiming;
+	public static  CoroutineHandle handleCountTiming;
 
 	IEnumerator<float> InitTiming()
 	{
@@ -32,7 +32,8 @@ public class TimerBehaviours : MonoBehaviour {
 
 			Contains.Time = _currentTime;
 
-			// TODO: Update the time on hud.
+            // TODO: Update the time on hud.
+            //Debug.Log("Timer UIBehaviours.Instance.UpdateTime (_currentTime);");
 			UIBehaviours.Instance.UpdateTime (_currentTime);
 
 			// TODO: Waiting the corountine.

@@ -69,7 +69,9 @@ public class GamePlay : Singleton < GamePlay > {
 
 	void Start()
 	{
-		switch (GameManager.Instance.GameType) {
+        Debug.Log("Gameplay Start");
+
+        switch (GameManager.Instance.GameType) {
 
 		case Enums.GameScenes.Tripeaks:
 
@@ -87,8 +89,9 @@ public class GamePlay : Singleton < GamePlay > {
 			// TODO: Init start.
 			_KGamePlay.InitStart ();
 			break;
-		} 
-	}
+		}
+
+    }
 
 	#endregion
 
@@ -195,6 +198,7 @@ public class GamePlay : Singleton < GamePlay > {
     }
     #endregion
 
+    public static bool autoWinShown = false;
 	void OnDisable()
 	{
 		if (!object.ReferenceEquals (Timing.Instance, null)) {
@@ -202,6 +206,82 @@ public class GamePlay : Singleton < GamePlay > {
 			Timing.KillCoroutines (Enums._GameScene [(int)GameManager.Instance.GameType]);
 		}
 	}
+    public void checkAutoWin () {
+        //Debug.Log("checkAutoWin: " + autoWinShown);
+        if (autoWinShown || GameManager.Instance.GameType != Enums.GameScenes.Klondike) return;
+        List<CardBehaviour> cardsGet;
+        switch (GameManager.Instance.GameType) {
+            case Enums.GameScenes.Tripeaks:
+                cardsGet = _TGamePlay.cardsGet;
+                break;
+            case Enums.GameScenes.Spider:
+                cardsGet = _SGamePlay.cardsGet;
+                break;
+            case Enums.GameScenes.Klondike:
+                cardsGet = _KGamePlay.cardsGet;
+                break;
+            default:
+                cardsGet = _KGamePlay.cardsGet;
+                break;
+        }
+        bool allFlips = true;
+        foreach (CardBehaviour card in cardsGet) {
+            //Debug.Log(card.transform.parent.name);
+            //Debug.Log(card.transform.parent.parent.name);
+            //Debug.Log(card.transform.parent.parent.parent.name);
+            if (!card.isUnlock && card.transform.parent.parent.parent.name == "[D] Playing") allFlips = false;
+        }
+        //Debug.Log(allFlips);
+
+        if (allFlips) {
+            DialogSystem.Instance.ShowDialogAutoWin();
+            //StartCoroutine(autoWin());
+        }
+    }
+    public void autoWin () {
+        StartCoroutine(autoWinCoroutine());
+
+    }
+
+    public IEnumerator autoWinCoroutine () {
+        
+        bool flag = true;
+        int counter = 0;
+        while (flag) {
+            Debug.Log(counter);
+            HintValueDisplay hint = PlayingZone.Instance.GetHint();
+            if (hint.cardDisplay == null) hint = HintZone.Instance.GetHint();
+            if (hint.cardDisplay == null ) {
+                //flag = false;
+                Debug.Log("hint.cardDisplay");
+                Debug.Log(hint.cardDisplay == null);
+                
+                //break;
+            } else 
+                hint.cardDisplay.cardClick();
+
+            Debug.Log("IsConditionWining(): " + (IsConditionWining()));
+            if (IsConditionWining()) flag = false;
+            Debug.Log("!IsHintAvailable(false): " + (!IsHintAvailable(false)));
+            if (!IsHintAvailable(false)) {
+                EventSystem.Instance.DrawHintCards();
+                //flag = false;
+            }
+            counter++;
+            Debug.Log("counter > 1000: " + (counter > 1000));
+            if (counter > 1000) flag = false;
+            Debug.Log("flag: " + flag);
+            Debug.Log("time: " + Time.timeScale);
+            yield return new WaitForSeconds(0.1f);
+        }
+        
+        //chechAutoWin();
+        /*
+        HintValueDisplay hint =  PlayingZone.Instance.GetHint();
+        if (hint.cardDisplay == null ) hint = HintZone.Instance.GetHint();
+        hint.cardDisplay.cardClick();
+        */
+    }
 }
 
 

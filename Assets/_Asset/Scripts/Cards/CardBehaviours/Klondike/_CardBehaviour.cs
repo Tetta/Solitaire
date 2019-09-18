@@ -207,8 +207,7 @@ namespace KLONDIKE
 
 					// TODO: Get the new position need to moving.
 					card.TargetPosition = Helper.GetPositionInTheResultZone ( zoneGet, Enums.Direction.None, card.IsUnlocked ());
-                    Debug.Log("card.POSITION: " + card.transform.position);
-                    Debug.Log("card.TargetPosition: " + card.TargetPosition);
+
 					// TODO: Moving to the new position.
 					card.Moving (card.TargetPosition, () => {		
 
@@ -310,9 +309,10 @@ namespace KLONDIKE
 		{
 			// TODO: Check the condition return.
 			if (DoCheckResultZone (IsMoving)) {
+                //GamePlay.Instance.checkAutoWin();
 
-				// TODO: Check the condition wining.
-				if ( GamePlay.Instance.IsConditionWining ()){
+                // TODO: Check the condition wining.
+                if ( GamePlay.Instance.IsConditionWining ()){
 					
 					// TODO: Update the state of GameOver.
 					GameManager.Instance.UpdateState(Enums.StateGame.GameOver);

@@ -14,7 +14,8 @@ public class EventSystem : Singleton < EventSystem > {
 	/// </summary>
 	public void DrawHintCards(){
 
-		// TODO: Playing the sound.
+        Debug.Log("DrawHintCards");
+        // TODO: Playing the sound.
 		SoundSystems.Instance.PlaySound (Enums.SoundIndex.Press);
 
 		// TODO: Draw the cards.
