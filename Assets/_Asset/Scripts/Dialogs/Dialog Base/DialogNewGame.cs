@@ -138,28 +138,29 @@ public class DialogNewGame : DialogInterface {
         playMode(Enums.GameScenes.Klondike, Enums.ModeGame.Hard);
     }
     public void klondikeMedium() {
-        playMode(Enums.GameScenes.Klondike, Enums.ModeGame.Medium);
+        
+        if (isAvailable("KlondikeMedium")) playMode(Enums.GameScenes.Klondike, Enums.ModeGame.Medium);
     }
     public void klondikeEasy() {
-        playMode(Enums.GameScenes.Klondike, Enums.ModeGame.Easy);
+        if (isAvailable("KlondikeEasy")) playMode(Enums.GameScenes.Klondike, Enums.ModeGame.Easy);
     }
     public void spiderHard() {
-        playMode(Enums.GameScenes.Spider, Enums.ModeGame.Hard);
+        if (isAvailable("SpiderHard")) playMode(Enums.GameScenes.Spider, Enums.ModeGame.Hard);
     }
     public void spiderMedium() {
-        playMode(Enums.GameScenes.Spider, Enums.ModeGame.Medium);
+        if (isAvailable("SpiderMedium")) playMode(Enums.GameScenes.Spider, Enums.ModeGame.Medium);
     }
     public void spiderEasy() {
-        playMode(Enums.GameScenes.Spider, Enums.ModeGame.Easy);
+        if (isAvailable("SpiderEasy")) playMode(Enums.GameScenes.Spider, Enums.ModeGame.Easy);
     }
     public void tripeakHard() {
-        playMode(Enums.GameScenes.Tripeaks, Enums.ModeGame.Hard);
+        if (isAvailable("TripeakHard")) playMode(Enums.GameScenes.Tripeaks, Enums.ModeGame.Hard);
     }
     public void tripeakMedium() {
-        playMode(Enums.GameScenes.Tripeaks, Enums.ModeGame.Medium);
+        if (isAvailable("TripeakMedium")) playMode(Enums.GameScenes.Tripeaks, Enums.ModeGame.Medium);
     }
     public void tripeakEasy() {
-        playMode(Enums.GameScenes.Tripeaks, Enums.ModeGame.Easy);
+        if (isAvailable("TripeakEasy")) playMode(Enums.GameScenes.Tripeaks, Enums.ModeGame.Easy);
     }
 
     public void playMode (Enums.GameScenes scene, Enums.ModeGame mode) {
@@ -285,5 +286,18 @@ public class DialogNewGame : DialogInterface {
                 break;
         }
         */
+    }
+
+    bool isAvailable (string from) {
+        bool flag = IAPManager.vip;
+        #if UNITY_ANDROID
+                //fix
+                flag = true;
+#endif
+        if (flag) return true;
+        else {
+            IAPManager.instance.ShowSubscriptionPanel(from);
+            return false;
+        }
     }
 }

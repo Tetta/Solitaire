@@ -19,10 +19,10 @@ public class IAPManager : MonoBehaviour
             PlayerPrefs.SetInt("SESSIONS_COUNT", PlayerPrefs.GetInt("SESSIONS_COUNT", 0) + 1);
             Debug.Log(PlayerPrefs.GetInt("SESSIONS_COUNT", 0));
             //on 2 session
-            if (PlayerPrefs.GetInt("SESSIONS_COUNT", 0) >= 2) {
+            //if (PlayerPrefs.GetInt("SESSIONS_COUNT", 0) >= 2) {
 
                 ShowSubscriptionPanel("Start");
-            }
+            //}
             DontDestroyOnLoad(gameObject);
         }
         else {
@@ -60,7 +60,9 @@ public class IAPManager : MonoBehaviour
     //public void purchase
 
     public void ShowSubscriptionPanel(string from) {
+
 #if UNITY_ANDROID
+        //fix
         return ;
 #endif
         AnalyticsController.subscriptionFrom = from;
@@ -73,6 +75,8 @@ public class IAPManager : MonoBehaviour
         subscribeCanvas.transform.parent.GetChild(1).gameObject.SetActive(false);
         //panel3
         subscribeCanvas.transform.parent.GetChild(2).gameObject.SetActive(false);
+        //panel4
+        subscribeCanvas.transform.parent.GetChild(3).gameObject.SetActive(false);
     }
     public void onPrivacyClick() {
         Application.OpenURL("https://docs.google.com/document/d/1FkOeftcs8gF9gZYcTyEXGgihmkdCb60x7Z1Q1o8ixbo/edit?usp=sharing");

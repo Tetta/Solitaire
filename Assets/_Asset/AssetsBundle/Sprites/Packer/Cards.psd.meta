@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 663d41939a678d2438401774035198bc
+guid: e364256ff957f9349a67728b4dfb64cd
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
@@ -91,17 +91,6 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites: []
@@ -113,9 +102,9 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-  spritePackingTag: Game
+  spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
+  pSDShowRemoveMatteOption: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 

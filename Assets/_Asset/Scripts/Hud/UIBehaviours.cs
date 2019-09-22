@@ -300,14 +300,14 @@ public class UIBehaviours : Singleton < UIBehaviours > {
 #if UNITY_ANDROID
         flag = true;
 #endif
-        if (!flag) IAPManager.instance.ShowSubscriptionPanel("UndoClick");
-        else {
+        //if (!flag) IAPManager.instance.ShowSubscriptionPanel("UndoClick");
+        //else {
 
             // TODO: Turn off hint.
             HintDisplay.Instance.DisableHint();
             // TODO: Undo.
             UndoSystem.Instance.Undo();
-        }
+        //}
 	}
 
 	public void DoHint()
@@ -329,13 +329,12 @@ public class UIBehaviours : Singleton < UIBehaviours > {
 #if UNITY_ANDROID
         flag = true;
 #endif
-        if (!flag) IAPManager.instance.ShowSubscriptionPanel("HintClick");
-        else
+        //if (!flag) IAPManager.instance.ShowSubscriptionPanel("HintClick");
+        //else
             // TODO: Check the hint.
             GamePlay.Instance.IsHintAvailable();
 
-        //fix text
-        //GamePlay.Instance.autoWin();
+
     }
 
 	#endregion

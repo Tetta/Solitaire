@@ -9,10 +9,12 @@ public class SubscriptionCanvas : MonoBehaviour
     public Image closeButton2;
     public Text closeButton11;
     public Image closeButton22;
+    public Image closeButton4;
 
     [SerializeField] private GameObject _panel;
     [SerializeField] private GameObject _panel2;
     [SerializeField] private GameObject _panel3;
+    [SerializeField] private GameObject _panel4;
     //[SerializeField] private Button _privacyPolicyButton;
     //[SerializeField] private Button _termsButton;
     //[SerializeField] private Button _closeButton;
@@ -37,7 +39,7 @@ public class SubscriptionCanvas : MonoBehaviour
     bool screenVert;
     bool screenVert2;
 
-    string vipDate = "09/11/2019"; //MM/dd/yyyy
+    string vipDate = "09/27/2019"; //MM/dd/yyyy
     private void Awake() {
 
         screenVert = Screen.height > Screen.width;
@@ -70,6 +72,7 @@ public class SubscriptionCanvas : MonoBehaviour
         AnalyticsController .sendEvent("SubscriptionShown", new Dictionary<string, object> {  { "From", AnalyticsController.subscriptionFrom } });
 
         _panel3.SetActive(DateTime.Now < DateTime.ParseExact(vipDate, "MM/dd/yyyy", null));
+        _panel4.SetActive(DateTime.Now >= DateTime.ParseExact(vipDate, "MM/dd/yyyy", null));
     }
 
     public void showPanel2 () {
@@ -96,15 +99,18 @@ public class SubscriptionCanvas : MonoBehaviour
         closeButton11.gameObject.SetActive(true);
         closeButton2.gameObject.SetActive(true);
         closeButton22.gameObject.SetActive(true);
+        closeButton4.gameObject.SetActive(true);
         LeanTween.alphaText(closeButton1.GetComponent<RectTransform>(), 0f, 0).setEase(LeanTweenType.linear);
         LeanTween.alphaText(closeButton11.GetComponent<RectTransform>(), 0f, 0).setEase(LeanTweenType.linear);
         LeanTween.alpha(closeButton2.GetComponent<RectTransform>(), 0f, 0).setEase(LeanTweenType.linear);
         LeanTween.alpha(closeButton22.GetComponent<RectTransform>(), 0f, 0).setEase(LeanTweenType.linear);
+        LeanTween.alpha(closeButton4.GetComponent<RectTransform>(), 0f, 0).setEase(LeanTweenType.linear);
 
         LeanTween.alphaText(closeButton1.GetComponent<RectTransform>(), 1f, 0.7f).setEase(LeanTweenType.linear);
         LeanTween.alphaText(closeButton11.GetComponent<RectTransform>(), 1f, 0.7f).setEase(LeanTweenType.linear);
         LeanTween.alpha(closeButton2.GetComponent<RectTransform>(), 1f, 0.7f).setEase(LeanTweenType.linear);
         LeanTween.alpha(closeButton22.GetComponent<RectTransform>(), 1f, 0.7f).setEase(LeanTweenType.linear);
+        LeanTween.alpha(closeButton4.GetComponent<RectTransform>(), 1f, 0.7f).setEase(LeanTweenType.linear);
     }
 
     private void Update() {
