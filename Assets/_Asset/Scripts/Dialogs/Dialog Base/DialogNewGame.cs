@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class DialogNewGame : DialogInterface {
 
-	[Header ("UI")]
-
+    [Header("UI")]
+    public static bool isShown = false;
 	/// <summary>
 	/// The user interface title.
 	/// </summary>
@@ -164,7 +164,9 @@ public class DialogNewGame : DialogInterface {
     }
 
     public void playMode (Enums.GameScenes scene, Enums.ModeGame mode) {
+
         Debug.Log("playMode: " + scene + " " + mode);
+
         Contains.Time = 0;
         // TODO: Check the condition null.
         if (!object.ReferenceEquals(TimerBehaviours.handleCountTiming, null)) {
@@ -186,6 +188,8 @@ public class DialogNewGame : DialogInterface {
         Close();
         // TODO: Clear the handles.
         // TODO: Check if not null.
+        if (!isShown) isShown = true;
+        else
         if (!object.ReferenceEquals(GamePlay.Instance, null)) {
 
                 switch (GameManager.Instance.GameType) {

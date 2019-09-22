@@ -53,6 +53,12 @@ public class DialogWining : DialogInterface {
         UIBestTimeValues.text = Contains.GetDisplayTime(PlayerData.BestTime);
         UIBestTimeValues.gameObject.SetActive(!newBestFlag);
         UIBestTimeValues.transform.parent.Find("NewBest").gameObject.SetActive(newBestFlag);
+
+        // TODO: Set the total played.
+        PlayerData.TotalWin++;
+
+        // TODO: Save the datas.
+        PlayerData.Save();
     }
 
     private void SetBool()
