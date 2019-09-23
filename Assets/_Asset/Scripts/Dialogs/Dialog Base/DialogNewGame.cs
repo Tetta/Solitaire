@@ -296,7 +296,7 @@ public class DialogNewGame : DialogInterface {
         bool flag = IAPManager.vip;
         #if UNITY_ANDROID
                 //fix
-                //flag = true;
+                flag = true;
 #endif
         if (flag) return true;
         else {

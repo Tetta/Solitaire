@@ -63,7 +63,7 @@ public class IAPManager : MonoBehaviour
 
 #if UNITY_ANDROID
         //fix
-        //return ;
+        return ;
 #endif
         AnalyticsController.subscriptionFrom = from;
 
