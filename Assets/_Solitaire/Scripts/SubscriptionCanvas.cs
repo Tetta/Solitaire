@@ -39,7 +39,7 @@ public class SubscriptionCanvas : MonoBehaviour
     bool screenVert;
     bool screenVert2;
 
-    string vipDate = "09/27/2019"; //MM/dd/yyyy
+    string vipDate = "09/28/2019"; //MM/dd/yyyy
     private void Awake() {
 
         screenVert = Screen.height > Screen.width;
