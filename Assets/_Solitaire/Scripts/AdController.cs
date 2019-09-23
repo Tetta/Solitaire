@@ -174,9 +174,11 @@ public class AdController : MonoBehaviour {
 
             IronSource.Agent.displayBanner();
         }
-        
+        else hideBanner();
+
     }
     public static void hideBanner () {
+        Debug.Log("hideBanner");
         IronSource.Agent.hideBanner();
     }
 

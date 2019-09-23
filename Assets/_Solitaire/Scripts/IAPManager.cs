@@ -53,7 +53,7 @@ public class IAPManager : MonoBehaviour
         vip = Convert.ToBoolean(i);
         //if (vip) GameController.instance.showPreviousScreen();
         //setVipFeatures();
-
+        AdController. hideBanner();
         //if (vip == 0 && PlayerPrefs.GetString("selectedBarName") == "vip")
         //    BarGUI.instance.updateBarPricesButtons();
     }
