@@ -164,7 +164,7 @@ public class DialogNewGame : DialogInterface {
     }
 
     public void playMode (Enums.GameScenes scene, Enums.ModeGame mode) {
-
+        GameManager.Instance.UpdateModeGame(mode);
         Debug.Log("playMode: " + scene + " " + mode);
 
         Contains.Time = 0;
@@ -188,8 +188,7 @@ public class DialogNewGame : DialogInterface {
         Close();
         // TODO: Clear the handles.
         // TODO: Check if not null.
-        if (!isShown) isShown = true;
-        else
+
         if (!object.ReferenceEquals(GamePlay.Instance, null)) {
 
                 switch (GameManager.Instance.GameType) {
@@ -296,7 +295,7 @@ public class DialogNewGame : DialogInterface {
         bool flag = IAPManager.vip;
         #if UNITY_ANDROID
                 //fix
-                flag = true;
+                //flag = true;
 #endif
         if (flag) return true;
         else {

@@ -108,8 +108,9 @@ namespace SPIDER
 				cardsGet.Clear ();
 			}
 
-
-			if (!object.ReferenceEquals (GameManager.Instance, null)) {
+            if (!DialogNewGame.isShown) DialogNewGame.isShown = true;
+            else
+            if (!object.ReferenceEquals (GameManager.Instance, null)) {
 
 				// TODO: Set the total played.
 				PlayerData.TotalPlayed++;
