@@ -59,6 +59,8 @@ public class DialogWining : DialogInterface {
 
         // TODO: Save the datas.
         PlayerData.Save();
+        AnalyticsController.sendEvent("WinGame", new Dictionary<string, object> { { "Type", GameManager.Instance.GameType }, { "Mode", GameManager.Instance.GetModeGame() } });
+
     }
 
     private void SetBool()
@@ -70,6 +72,8 @@ public class DialogWining : DialogInterface {
     {
         Debug.Log("Restart");
         GamePlay.autoWinShown = false;
+        GamePlay.magicWandDialogShown = false;
+        AnalyticsController.sendEvent("StartGame", new Dictionary<string, object> { { "Type", GameManager.Instance.GameType }, { "Mode", GameManager.Instance.GetModeGame() } });
 
         if (!IsReadyToPress)
         {

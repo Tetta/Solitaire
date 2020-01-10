@@ -40,6 +40,10 @@ public class DialogSystem : Singleton < DialogSystem > {
     /// The prefab dialog auto win.
     /// </summary>
     [SerializeField] private DialogAutoWin prefabDialogAutoWin;
+    /// <summary>
+    /// The prefab dialog auto win.
+    /// </summary>
+    [SerializeField] private DialogMagicWand prefabDialogMagicWand;
     #endregion
 
 
@@ -50,10 +54,14 @@ public class DialogSystem : Singleton < DialogSystem > {
     /// </summary>
     protected DialogNewGame dialogNewGame;
 
-	/// <summary>
-	/// The dialog settings.
-	/// </summary>
-	protected DialogSettings dialogSettings;
+    /// <summary>
+    /// The dialog new game.
+    /// </summary>
+    protected DialogMagicWand dialogMagicWand;
+    /// <summary>
+    /// The dialog settings.
+    /// </summary>
+    protected DialogSettings dialogSettings;
 
 	/// <summary>
 	/// The dialog message.
@@ -206,11 +214,33 @@ public class DialogSystem : Singleton < DialogSystem > {
 		// TODO: Show the dialog.
 		DoShow ( dialog );
 	}
+    /// <summary>
+    /// Shows the dialog new game.
+    /// </summary>
+    public void ShowDialogMagicWand()
+    {
+        Debug.Log("ShowDialogMagicWand");
+        // TODO: Get the dialog.
+        var dialog = GetTheDialog<DialogMagicWand>(prefabDialogMagicWand, dialogMagicWand);
 
-	/// <summary>
-	/// Shows the dialog settings.
-	/// </summary>
-	public void ShowDialogSettings()
+        // TODO: Check if this null.
+        if (object.ReferenceEquals(dialog, null))
+        {
+
+            // TODO: Break the functions.
+            return;
+        }
+
+        // TODO: set the default dialog.
+        dialogMagicWand = dialog;
+
+        // TODO: Show the dialog.
+        DoShow(dialog);
+    }
+    /// <summary>
+    /// Shows the dialog settings.
+    /// </summary>
+    public void ShowDialogSettings()
 	{
 		// TODO: Get the dialog.
 		var dialog = GetTheDialog < DialogSettings > (prefabDialogSettings, dialogSettings);

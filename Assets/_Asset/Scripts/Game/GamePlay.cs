@@ -5,7 +5,8 @@ using MEC;
 
 public class GamePlay : Singleton < GamePlay > {
 
-	[Header ("UI")]
+	public static bool magicWandDialogShown;
+    [Header ("UI")]
 	[SerializeField] public Transform TDrawCards;
     // =============================== Variables =============================== //
 
@@ -237,6 +238,26 @@ public class GamePlay : Singleton < GamePlay > {
             DialogSystem.Instance.ShowDialogAutoWin();
             //StartCoroutine(autoWin());
         }
+
+
+        //Debug.Log(magicWandDialogShown);
+        if ( magicWandDialogShown) return;
+
+        var valueDisplay = PlayingZone.Instance.GetHint();
+        
+        if (valueDisplay.cardDisplay == null)
+        {
+             var c = HintZone.Instance.GetHint2();
+            //Debug.Log("valueDisplay(): " + c);
+            if (c != null) Debug.Log("valueDisplay()2: " + c.GetProperties());
+            else {
+
+                magicWandDialogShown = true;
+                DialogSystem.Instance.ShowDialogMagicWand();
+            }
+
+        } else Debug.Log(valueDisplay.cardDisplay.GetProperties());
+
     }
     public void autoWin () {
         StartCoroutine(autoWinCoroutine());
@@ -282,6 +303,75 @@ public class GamePlay : Singleton < GamePlay > {
         hint.cardDisplay.cardClick();
         */
     }
+
+
+    public void magicWand()
+    {
+        Debug.Log("magicWand");
+        magicWandDialogShown = false;
+        bool moved = false;
+
+        var zoneCards = PlayingZone.Instance.GetTheListIdZones();
+        for (int i = 0; i < zoneCards.Count; i++)
+        {
+            var cards = PlayingZone.Instance.GetTheListCards((Enums.IdTransformCard)zoneCards[i]);
+            foreach (CardBehaviour playingCard in cards)
+            {
+                if (playingCard.IsUnlocked()) continue;
+                Debug.Log(playingCard.GetProperties());
+                var resultZoneCards = ResultZone.Instance.GetTheListIdZones();
+                for (int j = 0; j < resultZoneCards.Count; j++)
+                {
+                    var resCard = ResultZone.Instance.GetTheLastCard((Enums.IdTransformCard)resultZoneCards[j]);
+                    //if (resCard == null) continue;
+                    if (
+                        (playingCard.GetProperties().GetCardValue() == 1 && resCard == null)
+                        ||
+                        resCard != null && playingCard.IsReadyToJoinZone(resCard.GetProperties(), true, true)
+
+                        )
+                    {
+                        Debug.Log("111111111111111");
+                        Debug.Log(playingCard.GetProperties());
+                        Debug.Log((Enums.IdTransformCard)resultZoneCards[j]);
+                        if (resCard != null) Debug.Log(resCard.GetProperties());
+                        PlayingZone.Instance.RemoveTheCard(playingCard);
+                        ResultZone.Instance.AddTheCard((Enums.IdTransformCard)resultZoneCards[j], playingCard);
+
+                        playingCard.Unlock(true, () => {
+
+                            // TODO: Ready to draw another cards.
+                            // playingCard.IsReady = true;
+                        });
+
+                        playingCard.Moving(ResultZone.Instance.GetTransformCards((Enums.IdTransformCard)resultZoneCards[j]).position,
+                            ResultZone.Instance.GetTransformCards((Enums.IdTransformCard)resultZoneCards[j]), () => {
+
+                                // TODO: Set the target position x for the card.
+                                playingCard.TargetPosition.x = playingCard.transform.position.x;
+
+                                // TODO: Set the target position y for the card.
+                                playingCard.TargetPosition.y = playingCard.transform.position.y;
+
+                                // TODO: Set the target position z for the card.
+                                playingCard.TargetPosition.z = playingCard.transform.position.z;
+
+
+                            });
+                        moved = true;
+                        break;
+                    }
+                    if (moved) break;
+                }
+                if (moved) break;
+
+            }
+            if (moved) break;
+        }
+
+
+    }
+
 }
 
 

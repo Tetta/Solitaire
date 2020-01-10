@@ -131,8 +131,10 @@ public class DialogNewGame : DialogInterface {
     }
     //=====
     public void newGame() {
+
         if(GameManager.Instance.GetModeGame() == Enums.ModeGame.None) GameManager.Instance.UpdateModeGame(Enums.ModeGame.Hard);
         playMode(GameManager.Instance.GameType, GameManager.Instance.GetModeGame());
+
     }
     public void klondikeHard() {
         playMode(Enums.GameScenes.Klondike, Enums.ModeGame.Hard);
@@ -164,8 +166,11 @@ public class DialogNewGame : DialogInterface {
     }
 
     public void playMode (Enums.GameScenes scene, Enums.ModeGame mode) {
+
         GameManager.Instance.UpdateModeGame(mode);
         Debug.Log("playMode: " + scene + " " + mode);
+        GamePlay.magicWandDialogShown = false;
+        AnalyticsController.sendEvent("StartGame", new Dictionary<string, object> { { "Type", GameManager.Instance.GameType }, { "Mode", GameManager.Instance.GetModeGame() } });
 
         Contains.Time = 0;
         // TODO: Check the condition null.
@@ -295,7 +300,7 @@ public class DialogNewGame : DialogInterface {
         bool flag = IAPManager.vip;
         #if UNITY_ANDROID
                 //fix
-                //flag = true;
+                flag = true;
 #endif
         if (flag) return true;
         else {

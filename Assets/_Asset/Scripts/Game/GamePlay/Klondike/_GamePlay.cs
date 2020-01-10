@@ -21,7 +21,8 @@ namespace KLONDIKE
 		/// </summary>
 		public void InitStart()
 		{
-			// Runing the reset functions before start the games.
+            Debug.Log("KLONDIKE InitStart");
+            // Runing the reset functions before start the games.
 			Reset ();
 
 			// TODO: Draw cards, check status game, runing the game.
@@ -126,7 +127,7 @@ namespace KLONDIKE
 		protected void Init()
 		{
 
-            Debug.Log("Klondike init");
+            Debug.Log("Klondike init: " + GameManager.Instance.GetModeGame());
             // TODO: Create the default list will get the cards.
 			List < CardBehaviour > paramGet = new List<CardBehaviour>();
 
@@ -372,7 +373,7 @@ namespace KLONDIKE
 
             // TODO: showing the dialog.
 
-            Debug.Log(GameManager.Instance.GetModeGame());
+            Debug.Log("KLONDIKE StartingGameHandle " + GameManager.Instance.GetModeGame());
             if (GameManager.Instance.GetModeGame() == Enums.ModeGame.None) DialogSystem.Instance.ShowDialogNewGame();
             else DialogNewGame.updateMode(GameManager.Instance.GetModeGame());
 
@@ -382,11 +383,12 @@ namespace KLONDIKE
 			while (GameManager.Instance.GetStateGame () != Enums.StateGame.Start)
 				yield return 0f;
 
-			// TODO: Init the functions
+            Debug.Log("KLONDIKE StartingGameHandle after while");
+            // TODO: Init the functions
 			Init ();
 
-			// TODO: Count the number cards will be used.
-			Contains.TotalCardsAreUsing = cardsGet.Count;
+            // TODO: Count the number cards will be used.
+            Contains.TotalCardsAreUsing = cardsGet.Count;
 
 			// TODO: Create the cards will be return to pools.
 			var paramIn = new List<CardBehaviour> (cardsGet);
@@ -599,13 +601,13 @@ namespace KLONDIKE
 		{
 			// TODO: Get the hint from playing zone.
 			var valueDisplay = PlayingZone.Instance.GetHint();
-
+            
 			// TODO: Check null.
 			if (!object.ReferenceEquals( valueDisplay.cardDisplay , null))
 			{
-
-				// TODO: The condition to show.
-				if  (IsShow)
+                Debug.Log("PlayingZone");
+                // TODO: The condition to show.
+                if  (IsShow)
 				{
 
 					// TODO: Show the card.
@@ -622,9 +624,9 @@ namespace KLONDIKE
 			// TODO: Check null.
 			if (!object.ReferenceEquals(valueDisplay.cardDisplay, null))
 			{
-
-				// TODO: The condition to show.
-				if (IsShow)
+                Debug.Log("HintZone");
+                // TODO: The condition to show.
+                if (IsShow)
 				{
 					if (valueDisplay.cardDisplay.IsUnlocked ()) {
 						

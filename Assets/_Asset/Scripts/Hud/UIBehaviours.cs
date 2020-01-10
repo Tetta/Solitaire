@@ -190,6 +190,9 @@ public class UIBehaviours : Singleton < UIBehaviours > {
     public void DoNewGame()
 	{
         GamePlay.autoWinShown = false;
+        GamePlay.magicWandDialogShown = false;
+        AnalyticsController.sendEvent("StartGame", new Dictionary<string, object> { { "Type", GameManager.Instance.GameType }, { "Mode", GameManager.Instance.GetModeGame() } });
+
         DoNewGame(false);
         
     }

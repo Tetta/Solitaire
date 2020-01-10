@@ -85,5 +85,11 @@ public class HintZone : Zone < HintZone >
 		// TODO: Return null hint.
 		return new HintValueDisplay ();
 	}
+    public CardBehaviour GetHint2()
+    {
+
+                return _KHintZone.GetHint2();
+
+    }
 }
 

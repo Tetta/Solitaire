@@ -324,6 +324,7 @@ public class CardBehaviour : MonoBehaviour , IDragHandler , IBeginDragHandler , 
 	{
         //Debug.Log("Card OnPointerClick");
         // TODO: if the state of this card is not ready. break the functions.
+
         if (!IsReady())
             return;
         

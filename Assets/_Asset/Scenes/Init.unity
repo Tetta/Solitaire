@@ -633,6 +633,8 @@ MonoBehaviour:
     type: 3}
   prefabDialogAutoWin: {fileID: 48342181285863637, guid: 137d34cccc4c123479ae35a4df1fe0b6,
     type: 3}
+  prefabDialogMagicWand: {fileID: 3978050760949250372, guid: c1d4cf3641e77a6469e445a5df839ac2,
+    type: 3}
 --- !u!1 &893275533
 GameObject:
   m_ObjectHideFlags: 0

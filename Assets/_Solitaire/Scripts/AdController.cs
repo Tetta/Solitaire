@@ -164,9 +164,7 @@ public class AdController : MonoBehaviour {
 
 
 
-    public void showBannerTest() {
-        showBanner();
-    }
+
     public static void showBanner() {
         //fix
         if (!IAPManager.vip && !IAPManager.instance.subscribeCanvas.activeSelf) {
@@ -182,6 +180,7 @@ public class AdController : MonoBehaviour {
         IronSource.Agent.hideBanner();
     }
 
+    #region Banner event handlers
     //Banner Events
     void BannerAdLoadedEvent ()
     {
@@ -212,4 +211,5 @@ public class AdController : MonoBehaviour {
     void BannerAdLeftApplicationEvent () { 
     	Debug.Log ("unity-script: I got BannerAdLeftApplicationEvent");
     }
+    #endregion
 }

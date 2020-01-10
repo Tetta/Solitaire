@@ -265,5 +265,368 @@ namespace KLONDIKE
 			// TODO: Return the value.
 			return paramReturn;
 		}
-	}
+
+        public CardBehaviour GetHint2()
+        {
+            //first
+
+            // TODO: Create the param will be returned.
+            HintValueDisplay paramReturn = new HintValueDisplay();
+
+            // ============================================ LAST CARD FROM B ==================================== //
+
+            // TODO: Get the last cards.
+            CardBehaviour lastCard = HintZone.Instance.GetTheLastCard(Enums.IdTransformCard.TransformCards_B);
+            
+            var isReadyToJoin = false;
+
+            // TODO: Get the target position.
+            var positionTarget = Contains.Vector3Zero;
+
+            // ============================================ DOING LAST CARD WITH RESULT ZONE ==================== //
+            if (!object.ReferenceEquals(lastCard, null))
+            {
+
+                // TODO: Get the list of id.
+                var zoneCards = ResultZone.Instance.GetTheListIdZones();
+
+                // TODO: Get the cache of card from Result zone.
+                CardBehaviour cardParamFromResultZone = null;
+
+                for (int i = 0; i < zoneCards.Count; i++)
+                {
+
+                    // TODO: Get the last card in playing zone.
+                    cardParamFromResultZone = ResultZone.Instance.GetTheLastCard((Enums.IdTransformCard)zoneCards[i]);
+
+                    // TODO: Get the condition null.
+                    if (!object.ReferenceEquals(cardParamFromResultZone, null))
+                    {
+
+                        // TODO: Check the condition to join.
+                        if (lastCard.IsReadyToJoinZone(cardParamFromResultZone.GetProperties(), true))
+                        {
+
+                            isReadyToJoin = true;
+
+                            // TODO: Get the default position.
+                            positionTarget = cardParamFromResultZone.TargetPosition;
+                            return lastCard;
+                            break;
+                        }
+                    }
+                    else
+                    {
+
+                        if (lastCard.GetValue() == (int)Enums.CardVariables.One)
+                        {
+
+                            isReadyToJoin = true;
+
+                            // TODO: Get the default position.
+                            positionTarget = Helper.GetPositionInTheResultZone((Enums.IdTransformCard)zoneCards[i], Enums.Direction.None, true);
+                            return lastCard;
+                            break;
+                        }
+                    }
+                }
+            }
+
+            // =========================================== DOING LAST CARD WITH PLAYING ZONE ==================== //
+
+            if (!object.ReferenceEquals(lastCard, null) && isReadyToJoin == false)
+            {
+
+                // TODO: Get the list of cards.
+                var zoneCards = PlayingZone.Instance.GetTheListIdZones();
+
+                // TODO: Get the cache of card from playing zone.
+                CardBehaviour cardParamFromPlayingZone = null;
+
+                for (int i = 0; i < zoneCards.Count; i++)
+                {
+
+                    // TODO: Get the last card in playing zone.
+                    cardParamFromPlayingZone = PlayingZone.Instance.GetTheLastCard((Enums.IdTransformCard)zoneCards[i]);
+
+                    // TODO: Get the condition null.
+                    if (!object.ReferenceEquals(cardParamFromPlayingZone, null))
+                    {
+
+
+                        // TODO: Check the condition to join.
+                        if (lastCard.IsReadyToJoinZone(cardParamFromPlayingZone.GetProperties(), false, GameManager.Instance.GetModeGame() == Enums.ModeGame.Easy))
+                        {
+
+                            isReadyToJoin = true;
+
+                            // TODO: Get the default position.
+                            positionTarget = cardParamFromPlayingZone.TargetPosition;
+                            return lastCard;
+                            break;
+                        }
+                    }
+                    else
+                    {
+                        if (lastCard.GetValue() == (int)Enums.CardVariables.King)
+                        {
+
+                            isReadyToJoin = true;
+
+                            // TODO: Get the default position.
+                            positionTarget = Helper.GetPositionInThePlayingZone((Enums.IdTransformCard)zoneCards[i], Enums.Direction.None, true);
+                            return lastCard;
+                            break;
+                        }
+                    }
+                }
+            }
+
+            // ============================================ LAST CARD FROM A ==================================== //
+
+            //----------------------------------------------------------------------------------
+            // TODO: Create the param will be returned.
+             paramReturn = new HintValueDisplay();
+
+            // ============================================ LAST CARD FROM B ==================================== //
+             lastCard = HintZone.Instance.GetTheLastCard(Enums.IdTransformCard.TransformCards_B);
+
+            // TODO: Get the last cards.
+
+            var arrayCards = HintZone.Instance.GetTheListCards(Enums.IdTransformCard.TransformCards_A);
+            foreach (CardBehaviour card in arrayCards)
+            {
+                lastCard = card;
+
+                 isReadyToJoin = false;
+
+                // TODO: Get the target position.
+                 positionTarget = Contains.Vector3Zero;
+
+                // ============================================ DOING LAST CARD WITH RESULT ZONE ==================== //
+                if (!object.ReferenceEquals(lastCard, null))
+                {
+
+                    // TODO: Get the list of id.
+                    var zoneCards = ResultZone.Instance.GetTheListIdZones();
+
+                    // TODO: Get the cache of card from Result zone.
+                    CardBehaviour cardParamFromResultZone = null;
+
+                    for (int i = 0; i < zoneCards.Count; i++)
+                    {
+
+                        // TODO: Get the last card in playing zone.
+                        cardParamFromResultZone = ResultZone.Instance.GetTheLastCard((Enums.IdTransformCard)zoneCards[i]);
+
+                        // TODO: Get the condition null.
+                        if (!object.ReferenceEquals(cardParamFromResultZone, null))
+                        {
+
+                            // TODO: Check the condition to join.
+                            if (lastCard.IsReadyToJoinZone(cardParamFromResultZone.GetProperties(), true))
+                            {
+
+                                isReadyToJoin = true;
+
+                                // TODO: Get the default position.
+                                positionTarget = cardParamFromResultZone.TargetPosition;
+                                return lastCard;
+                                break;
+                            }
+                        }
+                        else
+                        {
+
+                            if (lastCard.GetValue() == (int)Enums.CardVariables.One)
+                            {
+
+                                isReadyToJoin = true;
+
+                                // TODO: Get the default position.
+                                positionTarget = Helper.GetPositionInTheResultZone((Enums.IdTransformCard)zoneCards[i], Enums.Direction.None, true);
+                                return lastCard;
+                                break;
+                            }
+                        }
+                    }
+                }
+
+                // =========================================== DOING LAST CARD WITH PLAYING ZONE ==================== //
+
+                if (!object.ReferenceEquals(lastCard, null) && isReadyToJoin == false)
+                {
+
+                    // TODO: Get the list of cards.
+                    var zoneCards = PlayingZone.Instance.GetTheListIdZones();
+
+                    // TODO: Get the cache of card from playing zone.
+                    CardBehaviour cardParamFromPlayingZone = null;
+
+                    for (int i = 0; i < zoneCards.Count; i++)
+                    {
+
+                        // TODO: Get the last card in playing zone.
+                        cardParamFromPlayingZone = PlayingZone.Instance.GetTheLastCard((Enums.IdTransformCard)zoneCards[i]);
+
+                        // TODO: Get the condition null.
+                        if (!object.ReferenceEquals(cardParamFromPlayingZone, null))
+                        {
+
+
+                            // TODO: Check the condition to join.
+                            if (lastCard.IsReadyToJoinZone(cardParamFromPlayingZone.GetProperties(), false, GameManager.Instance.GetModeGame() == Enums.ModeGame.Easy))
+                            {
+
+                                isReadyToJoin = true;
+
+                                // TODO: Get the default position.
+                                positionTarget = cardParamFromPlayingZone.TargetPosition;
+                                return lastCard;
+                                break;
+                            }
+                        }
+                        else
+                        {
+                            if (lastCard.GetValue() == (int)Enums.CardVariables.King)
+                            {
+
+                                isReadyToJoin = true;
+
+                                // TODO: Get the default position.
+                                positionTarget = Helper.GetPositionInThePlayingZone((Enums.IdTransformCard)zoneCards[i], Enums.Direction.None, true);
+                                return lastCard;
+                                break;
+                            }
+                        }
+                    }
+                }
+
+                // ============================================ LAST CARD FROM A ==================================== //
+
+
+
+
+            }
+
+            arrayCards = HintZone.Instance.GetTheListCards(Enums.IdTransformCard.TransformCards_B);
+            foreach (CardBehaviour card in arrayCards)
+            {
+                lastCard = card;
+
+                 isReadyToJoin = false;
+
+                // TODO: Get the target position.
+                 positionTarget = Contains.Vector3Zero;
+
+                // ============================================ DOING LAST CARD WITH RESULT ZONE ==================== //
+                if (!object.ReferenceEquals(lastCard, null))
+                {
+
+                    // TODO: Get the list of id.
+                    var zoneCards = ResultZone.Instance.GetTheListIdZones();
+
+                    // TODO: Get the cache of card from Result zone.
+                    CardBehaviour cardParamFromResultZone = null;
+
+                    for (int i = 0; i < zoneCards.Count; i++)
+                    {
+
+                        // TODO: Get the last card in playing zone.
+                        cardParamFromResultZone = ResultZone.Instance.GetTheLastCard((Enums.IdTransformCard)zoneCards[i]);
+
+                        // TODO: Get the condition null.
+                        if (!object.ReferenceEquals(cardParamFromResultZone, null))
+                        {
+
+                            // TODO: Check the condition to join.
+                            if (lastCard.IsReadyToJoinZone(cardParamFromResultZone.GetProperties(), true))
+                            {
+
+                                isReadyToJoin = true;
+
+                                // TODO: Get the default position.
+                                positionTarget = cardParamFromResultZone.TargetPosition;
+                                return lastCard;
+                                break;
+                            }
+                        }
+                        else
+                        {
+
+                            if (lastCard.GetValue() == (int)Enums.CardVariables.One)
+                            {
+
+                                isReadyToJoin = true;
+
+                                // TODO: Get the default position.
+                                positionTarget = Helper.GetPositionInTheResultZone((Enums.IdTransformCard)zoneCards[i], Enums.Direction.None, true);
+                                return lastCard;
+                                break;
+                            }
+                        }
+                    }
+                }
+
+                // =========================================== DOING LAST CARD WITH PLAYING ZONE ==================== //
+
+                if (!object.ReferenceEquals(lastCard, null) && isReadyToJoin == false)
+                {
+
+                    // TODO: Get the list of cards.
+                    var zoneCards = PlayingZone.Instance.GetTheListIdZones();
+
+                    // TODO: Get the cache of card from playing zone.
+                    CardBehaviour cardParamFromPlayingZone = null;
+
+                    for (int i = 0; i < zoneCards.Count; i++)
+                    {
+
+                        // TODO: Get the last card in playing zone.
+                        cardParamFromPlayingZone = PlayingZone.Instance.GetTheLastCard((Enums.IdTransformCard)zoneCards[i]);
+
+                        // TODO: Get the condition null.
+                        if (!object.ReferenceEquals(cardParamFromPlayingZone, null))
+                        {
+
+
+                            // TODO: Check the condition to join.
+                            if (lastCard.IsReadyToJoinZone(cardParamFromPlayingZone.GetProperties(), false, GameManager.Instance.GetModeGame() == Enums.ModeGame.Easy))
+                            {
+
+                                isReadyToJoin = true;
+
+                                // TODO: Get the default position.
+                                positionTarget = cardParamFromPlayingZone.TargetPosition;
+                                return lastCard;
+                                break;
+                            }
+                        }
+                        else
+                        {
+                            if (lastCard.GetValue() == (int)Enums.CardVariables.King)
+                            {
+
+                                isReadyToJoin = true;
+
+                                // TODO: Get the default position.
+                                positionTarget = Helper.GetPositionInThePlayingZone((Enums.IdTransformCard)zoneCards[i], Enums.Direction.None, true);
+                                return lastCard;
+                                break;
+                            }
+                        }
+                    }
+                }
+
+                // ============================================ LAST CARD FROM A ==================================== //
+
+
+
+            }
+
+
+
+            return null;
+        }
+    }
 }

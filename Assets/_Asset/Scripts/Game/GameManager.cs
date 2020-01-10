@@ -125,7 +125,8 @@ public class GameManager : Singleton < GameManager > {
 	public void InitStart()
 	{
 		stateGame = Enums.StateGame.Start;
-	}
+        
+    }
 
 
 	/// <summary>
